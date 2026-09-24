@@ -1,4 +1,4 @@
-Legado
+LEGADO ACCION ) 2 Y CIF VACIO
 <NS1:Envelope
 	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
 	<NS1:Body>
@@ -54,18 +54,17 @@ Legado
 				</flujo>
 			</bodyOut>
 			<error>
-				<codigo>0</codigo>
-				<mensaje>TCSBRKR4_BP:ISProductos:8001-OK</mensaje>
+				<codigo>0005</codigo>
+				<mensaje>TCSBRKR4_BP:ISProductos:8001-Valor del campo cif de cotitulares vacío o inválido</mensaje>
 				<mensajeNegocio></mensajeNegocio>
-				<tipo>INFO</tipo>
+				<tipo>ERROR</tipo>
 				<recurso>ORQProductos0064/ModificarCorrelacionCliente31</recurso>
 				<componente>ModificarCorrelacionCliente31</componente>
 				<backend>00638</backend>
 			</error>
 		</NS2:ModificarCorrelacionCliente31Response>
 	</NS1:Body>
-</NS1:Envelope>
-migrado 
+</NS1:Envelope>     MIGRADO ACCION  2 Y CIF CAMPO VACION 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <NS1:Envelope
 	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/"
@@ -122,10 +121,212 @@ migrado
 				</flujo>
 			</bodyOut>
 			<error>
-				<codigo>0</codigo>
-				<mensaje>ISProductos:8001-OK</mensaje>
+				<codigo>0005</codigo>
+				<mensaje>Valor del campo cif del cotitular vacío</mensaje>
 				<mensajeNegocio></mensajeNegocio>
-				<tipo>INFO</tipo>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-orqproductos0064/ModificarCorrelacionCliente31</recurso>
+				<componente>ModificarCorrelacionCliente31</componente>
+				<backend>00638</backend>
+			</error>
+		</NS2:ModificarCorrelacionCliente31Response>
+	</NS1:Body>
+</NS1:Envelope>
+lEGADO CAMPO CUENTA  TAG NUMERO VACIO
+<NS1:Envelope
+	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+	<NS1:Body>
+		<NS2:ModificarCorrelacionCliente31Response
+			xmlns:NS2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>MLj53KS7MhiSQACCkFspUvJQeS4dLC8AvN8EjSRh/t8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000651</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad>d4617a426ea94d2ba39b53914e344849</unicidad>
+				<guid>d4617a426ea94d2ba39b53914e344849</guid>
+				<fechaHora>202605291138260008</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>383b793c-3bad-48a2-af66-1702547ea671</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>1003256292</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+				<bancs>
+					<teller>00070560</teller>
+					<terminal>1</terminal>
+					<institucion>0010</institucion>
+					<agencia>1</agencia>
+					<estacion>1</estacion>
+					<aplicacion></aplicacion>
+					<canal></canal>
+				</bancs>
+				<documento>
+					<fechaContable></fechaContable>
+					<numeroDocumento></numeroDocumento>
+					<journals>
+						<journal>
+							<valor></valor>
+						</journal>
+					</journals>
+				</documento>
+			</headerOut>
+			<bodyOut>
+				<flujo>
+					<estado>finalizar</estado>
+					<campos>
+						<campo>
+							<clave></clave>
+							<valor></valor>
+						</campo>
+					</campos>
+				</flujo>
+			</bodyOut>
+			<error>
+				<codigo>0002</codigo>
+				<mensaje>TCSBRKR4_BP:ISProductos:8001-Valor del campo numero de cuenta vacío o inválido</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>ORQProductos0064/ModificarCorrelacionCliente31</recurso>
+				<componente>ModificarCorrelacionCliente31</componente>
+				<backend>00638</backend>
+			</error>
+		</NS2:ModificarCorrelacionCliente31Response>
+	</NS1:Body>
+</NS1:Envelope>
+MIGRADO CUENTA TAG NUMERO VACIO
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NS1:Envelope
+	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:NS2="http://bpichincha.com/servicios">
+	<NS1:Body>
+		<NS2:ModificarCorrelacionCliente31Response>
+			<headerOut>
+				<dispositivo>MLj53KS7MhiSQACCkFspUvJQeS4dLC8AvN8EjSRh/t8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000651</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad>d4617a426ea94d2ba39b53914e344849</unicidad>
+				<guid>d4617a426ea94d2ba39b53914e344849</guid>
+				<fechaHora>202605291138260008</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>383b793c-3bad-48a2-af66-1702547ea671</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>1003256292</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+				<bancs>
+					<teller>00070560</teller>
+					<terminal>1</terminal>
+					<institucion>0010</institucion>
+					<agencia>1</agencia>
+					<estacion>1</estacion>
+					<aplicacion></aplicacion>
+					<canal></canal>
+				</bancs>
+				<documento>
+					<fechaContable></fechaContable>
+					<numeroDocumento></numeroDocumento>
+					<journals>
+						<journal>
+							<valor></valor>
+						</journal>
+					</journals>
+				</documento>
+			</headerOut>
+			<bodyOut>
+				<flujo>
+					<estado>finalizar</estado>
+					<campos>
+						<campo>
+							<clave></clave>
+							<valor></valor>
+						</campo>
+					</campos>
+				</flujo>
+			</bodyOut>
+			<error>
+				<codigo>0002</codigo>
+				<mensaje>Valor del campo numero de cuenta vacío</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-orqproductos0064/ModificarCorrelacionCliente31</recurso>
+				<componente>ModificarCorrelacionCliente31</componente>
+				<backend>00638</backend>
+			</error>
+		</NS2:ModificarCorrelacionCliente31Response>
+	</NS1:Body>
+</NS1:Envelope>
+LEGADO CUENTA TAG NUMERO CON LETRAS
+<NS1:Envelope
+	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+	<NS1:Body>
+		<NS2:ModificarCorrelacionCliente31Response
+			xmlns:NS2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>MLj53KS7MhiSQACCkFspUvJQeS4dLC8AvN8EjSRh/t8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000651</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad>d4617a426ea94d2ba39b53914e344849</unicidad>
+				<guid>d4617a426ea94d2ba39b53914e344849</guid>
+				<fechaHora>202605291138260008</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>383b793c-3bad-48a2-af66-1702547ea671</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>1003256292</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+				<bancs>
+					<teller>00070560</teller>
+					<terminal>1</terminal>
+					<institucion>0010</institucion>
+					<agencia>1</agencia>
+					<estacion>1</estacion>
+					<aplicacion></aplicacion>
+					<canal></canal>
+				</bancs>
+				<documento>
+					<fechaContable></fechaContable>
+					<numeroDocumento></numeroDocumento>
+					<journals>
+						<journal>
+							<valor></valor>
+						</journal>
+					</journals>
+				</documento>
+			</headerOut>
+			<bodyOut>
+				<flujo>
+					<estado>finalizar</estado>
+					<campos>
+						<campo>
+							<clave></clave>
+							<valor></valor>
+						</campo>
+					</campos>
+				</flujo>
+			</bodyOut>
+			<error>
+				<codigo>0005</codigo>
+				<mensaje>TCSBRKR4_BP:ISProductos:8001-Valor del campo cif de cotitulares vacío o inválido</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
 				<recurso>ORQProductos0064/ModificarCorrelacionCliente31</recurso>
 				<componente>ModificarCorrelacionCliente31</componente>
 				<backend>00638</backend>
