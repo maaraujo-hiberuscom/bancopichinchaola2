@@ -1,11 +1,28 @@
+CP-003 — Filtro por tipo
+Regresa al mismo bodyIn, borra el 1224 de la prueba anterior y coloca 1 en codigoTipoAutorizador.
 
 <bodyIn>
     <agenciaAutorizaMedioServi/>
     <usuarioIngresoAutorizaMedioServi/>
     <codigoMedioCatDetalle/>
     <codigoEmpresaServicio/>
-    <codigoTipoAutorizador/>
-    <codigoAutorizaMedioServi>1224</codigoAutorizaMedioServi>
+    <codigoTipoAutorizador>1</codigoTipoAutorizador>
+    <codigoAutorizaMedioServi/>
     <fechaIngresoAutorizaMedioServi/>
 </bodyIn>
+  
+
+
+En tu respuesta guardada, el tipo 1 corresponde a Easy Pagos. Deberíamos recibir únicamente autorizadores de ese tipo, siempre que los datos no hayan cambiado.
+
+Así continuamos con los demás filtros
+Una vez que termines las tres primeras pruebas, utiliza esta pequeña tabla. En todos los casos, deja vacíos los demás campos de bodyIn.
+Prueba	Campo que llenas	Valor
+CP-004: por medio	codigoMedioCatDetalle	12
+CP-005: por empresa	codigoEmpresaServicio	1224
+CP-006: combinados	codigoAutorizaMedioServi	1224
+	codigoTipoAutorizador	1
+	codigoMedioCatDetalle	12
+	codigoEmpresaServicio	1224
+Los valores de CP-006 aparecen juntos en un registro de la respuesta guardada del legado, por lo que sirven como datos iniciales. Debes confirmar su existencia en Dev.
   
