@@ -1,10 +1,11 @@
-consulta sin filtros
+
 <bodyIn>
     <agenciaAutorizaMedioServi/>
     <usuarioIngresoAutorizaMedioServi/>
     <codigoMedioCatDetalle/>
     <codigoEmpresaServicio/>
     <codigoTipoAutorizador/>
-    <codigoAutorizaMedioServi/>
+    <codigoAutorizaMedioServi>1224</codigoAutorizaMedioServi>
     <fechaIngresoAutorizaMedioServi/>
 </bodyIn>
+  
