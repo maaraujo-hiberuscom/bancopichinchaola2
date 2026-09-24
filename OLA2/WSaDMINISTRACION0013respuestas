@@ -112,3 +112,117 @@ cp-002 legado
 		</ns2:consultarAutorizadorMedioServicio01Response>
 	</soapenv:Body>
 </soapenv:Envelope>
+CP-004 MIGRADO
+<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarAutorizadorMedioServicio01Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler/>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente/>
+			</headerOut>
+			<bodyOut>
+				<autorizaMedioServicios>
+					<autorizaMedioServicio>
+						<codigoAutorizaMedioServi>1224</codigoAutorizaMedioServi>
+						<agenciaAutorizaMedioServi>0197 </agenciaAutorizaMedioServi>
+						<codigoPadreCatalogoDetalle>2</codigoPadreCatalogoDetalle>
+						<fechaIngresoAutorizaMedioServi>2018-04-13T11:46:33-05:00</fechaIngresoAutorizaMedioServi>
+						<habilitadoAutorizaMedioServi>1</habilitadoAutorizaMedioServi>
+						<usuarioIngresoAutorizaMedioServi>MIGRACION</usuarioIngresoAutorizaMedioServi>
+						<codigoMedioCatDetalle>12</codigoMedioCatDetalle>
+						<codigoEmpresaServicio>1224</codigoEmpresaServicio>
+						<codigoTipoAutorizador>1</codigoTipoAutorizador>
+						<nombreTipoAutorizador>Easy Pagos</nombreTipoAutorizador>
+						<nombreMedio>Banca Web</nombreMedio>
+						<codigoMaestro>2</codigoMaestro>
+					</autorizaMedioServicio>
+				</autorizaMedioServicios>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>OK</mensaje>
+				<mensajeNegocio/>
+				<tipo>INFO</tipo>
+				<recurso>tca-msa-sp-wsadministracion0013/consultarAutorizadorMedioServicio01</recurso>
+				<componente>tca-msa-sp-wsadministracion0013</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:consultarAutorizadorMedioServicio01Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+LEGADO CP004
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarAutorizadorMedioServicio01Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente></tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<autorizaMedioServicios>
+					<autorizaMedioServicio>
+						<codigoAutorizaMedioServi>1224</codigoAutorizaMedioServi>
+						<agenciaAutorizaMedioServi>0197 </agenciaAutorizaMedioServi>
+						<codigoPadreCatalogoDetalle>2</codigoPadreCatalogoDetalle>
+						<fechaIngresoAutorizaMedioServi>2018-04-13T11:46:33-05:00</fechaIngresoAutorizaMedioServi>
+						<habilitadoAutorizaMedioServi>1</habilitadoAutorizaMedioServi>
+						<usuarioIngresoAutorizaMedioServi>MIGRACION</usuarioIngresoAutorizaMedioServi>
+						<codigoMedioCatDetalle>12</codigoMedioCatDetalle>
+						<codigoEmpresaServicio>1224</codigoEmpresaServicio>
+						<codigoTipoAutorizador>1</codigoTipoAutorizador>
+						<nombreTipoAutorizador>Easy Pagos</nombreTipoAutorizador>
+						<nombreMedio>Banca Web</nombreMedio>
+						<codigoMaestro>2</codigoMaestro>
+					</autorizaMedioServicio>
+				</autorizaMedioServicios>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>VHReglas-OK</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>INFO</tipo>
+				<recurso>WSAdministracion0013/consultarAutorizadorMedioServicio01</recurso>
+				<componente>WSAdministracion0013</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:consultarAutorizadorMedioServicio01Response>
+	</soapenv:Body>
+</soapenv:Envelope>
