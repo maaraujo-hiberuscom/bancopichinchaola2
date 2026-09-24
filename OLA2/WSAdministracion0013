@@ -1,380 +1,253 @@
-http://10.60.128.58:6981/WSAdministracion0013/soap/WSAdministracion0013Request
-https://tca-msa-sp-wsadministracion0013-enp.apps.ocpdev.uiotest.bpichinchatest.test/WSAdministracion0013/soap/WSAdministracion0013Request
-{
-  "info": {
-    "name": "WSAdministracion0013 - QA Legado vs Migrado (sin notas)",
-    "_postman_id": "dd794c61-6cdd-4f06-b287-0f25eeb6e7d0",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": "Versión de trabajo para QA: 4 operaciones, cada una con requests Legacy y Dev originales. Se retiraron notas y ejemplos de respuesta. ADVERTENCIA: revisar SOAPAction que apunta a una operación diferente y unificar datos entre Legacy y Dev antes de comparar."
-  },
-  "item": [
-    {
-      "name": "guardarAutorizadorMedioServicio22",
-      "item": [
-        {
-          "name": "guardarAutorizadorMedioServicio22 - Legacy",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "text/xml; charset=utf-8"
-              },
-              {
-                "key": "SOAPAction",
-                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:guardarAutorizadorMedioServicio22>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <!--Optional:-->\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <!--Optional:-->\n                <agenciaAutorizaMedioServi>0197</agenciaAutorizaMedioServi>\n                <!--Optional:-->\n                <usuarioIngresoAutorizaMedioServi>MIGRACION</usuarioIngresoAutorizaMedioServi>\n                <!--Optional:-->\n                <codigoMedioCatDetalle>12</codigoMedioCatDetalle>\n                <!--Optional:-->\n                <codigoEmpresaServicio>1224</codigoEmpresaServicio>\n                <!--Optional:-->\n                <codigoTipoAutorizador>1</codigoTipoAutorizador>\n            </bodyIn>\n        </ser:guardarAutorizadorMedioServicio22>\n    </soapenv:Body>\n</soapenv:Envelope>",
-              "options": {
-                "raw": {
-                  "language": "xml"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://10.60.128.58:6981/WSAdministracion0013/soap/WSAdministracion0013Request",
-              "protocol": "http",
-              "host": [
-                "10",
-                "60",
-                "128",
-                "58"
-              ],
-              "port": "6981",
-              "path": [
-                "WSAdministracion0013",
-                "soap",
-                "WSAdministracion0013Request"
-              ]
-            },
-            "description": "Request Legacy del archivo original. El SOAPAction exportado apunta a ActualizarMontoTransferenciaCuenta31 (otra operación): confirmar valor correcto con WSDL/DEV. Comparar únicamente tras verificar que ambos ambientes reciban el mismo bodyIn y headerIn. No contiene credenciales de la sección Datos."
-          },
-          "response": []
-        },
-        {
-          "name": "guardarAutorizadorMedioServicio22 - Dev",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "text/xml; charset=utf-8"
-              },
-              {
-                "key": "SOAPAction",
-                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:guardarAutorizadorMedioServicio22>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <!--Optional:-->\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <!--Optional:-->\n                <agenciaAutorizaMedioServi>0197</agenciaAutorizaMedioServi>\n                <!--Optional:-->\n                <usuarioIngresoAutorizaMedioServi>MIGRACION</usuarioIngresoAutorizaMedioServi>\n                <!--Optional:-->\n                <codigoMedioCatDetalle>12</codigoMedioCatDetalle>\n                <!--Optional:-->\n                <codigoEmpresaServicio>999</codigoEmpresaServicio>\n                <!--Optional:-->\n                <codigoTipoAutorizador>1</codigoTipoAutorizador>\n            </bodyIn>\n        </ser:guardarAutorizadorMedioServicio22>\n    </soapenv:Body>\n</soapenv:Envelope>",
-              "options": {
-                "raw": {
-                  "language": "xml"
-                }
-              }
-            },
-            "url": {
-              "raw": "https://tca-msa-sp-wsadministracion0013-enp.apps.ocpdev.uiotest.bpichinchatest.test/WSAdministracion0013/soap/WSAdministracion0013Request",
-              "protocol": "https",
-              "host": [
-                "tca-msa-sp-wsadministracion0013-enp",
-                "apps",
-                "ocpdev",
-                "uiotest",
-                "bpichinchatest",
-                "test"
-              ],
-              "path": [
-                "WSAdministracion0013",
-                "soap",
-                "WSAdministracion0013Request"
-              ]
-            },
-            "description": "Request Dev del archivo original. El SOAPAction exportado apunta a ActualizarMontoTransferenciaCuenta31 (otra operación): confirmar valor correcto con WSDL/DEV. Comparar únicamente tras verificar que ambos ambientes reciban el mismo bodyIn y headerIn. No contiene credenciales de la sección Datos."
-          },
-          "response": []
-        }
-      ]
-    },
-    {
-      "name": "actualizarAutorizadorMedioServicio34",
-      "item": [
-        {
-          "name": "actualizarAutorizadorMedioServicio34 - Legacy",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "text/xml; charset=utf-8"
-              },
-              {
-                "key": "SOAPAction",
-                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <ser:actualizarAutorizadorMedioServicio34>\n\t\t\t<headerIn>\n\t\t\t\t<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n\t\t\t\t<empresa>0010</empresa>\n\t\t\t\t<canal>02</canal>\n\t\t\t\t<medio>020002</medio>\n\t\t\t\t<aplicacion>00647</aplicacion>\n\t\t\t\t<agencia>197</agencia>\n\t\t\t\t<tipoTransaccion>302000201</tipoTransaccion>\n\t\t\t\t<geolocalizacion>1234</geolocalizacion>\n\t\t\t\t<usuario>ISMAVEGA</usuario>\n\t\t\t\t<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n\t\t\t\t<guid>59cae047abad47d5b683388a132fbddf</guid>\n\t\t\t\t<fechaHora>202506251508450015</fechaHora>\n\t\t\t\t<filler/>\n\t\t\t\t<idioma>es-EC</idioma>\n\t\t\t\t<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n\t\t\t\t<ip>0.0.0.0</ip>\n\t\t\t\t<idCliente>0801545674</idCliente>\n\t\t\t\t<tipoIdCliente>0001</tipoIdCliente>\n\t\t\t\t<!--Optional:-->\n\t\t\t\t<bancs>\n\t\t\t\t\t<teller>00070560</teller>\n\t\t\t\t\t<terminal>1</terminal>\n\t\t\t\t\t<institucion>0010</institucion>\n\t\t\t\t\t<agencia>1</agencia>\n\t\t\t\t\t<estacion>1</estacion>\n\t\t\t\t\t<aplicacion/>\n\t\t\t\t\t<canal/>\n\t\t\t\t</bancs>\n\t\t\t</headerIn>\n         <bodyIn>\n            <!--Optional:-->\n            <agenciaAutorizaMedioServi>0197</agenciaAutorizaMedioServi>\n            <!--Optional:-->\n            <usuarioIngresoAutorizaMedioServi>MIGRACION</usuarioIngresoAutorizaMedioServi>\n            <!--Optional:-->\n            <codigoMedioCatDetalle>12</codigoMedioCatDetalle>\n            <!--Optional:-->\n            <codigoEmpresaServicio>365</codigoEmpresaServicio>\n            <!--Optional:-->\n            <codigoTipoAutorizador>2</codigoTipoAutorizador>\n            <!--Optional:-->\n            <codigoAutorizaMedioServi>366</codigoAutorizaMedioServi>\n         </bodyIn>\n      </ser:actualizarAutorizadorMedioServicio34>\n   </soapenv:Body>\n</soapenv:Envelope>",
-              "options": {
-                "raw": {
-                  "language": "xml"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://10.60.128.58:6981/WSAdministracion0013/soap/WSAdministracion0013Request",
-              "protocol": "http",
-              "host": [
-                "10",
-                "60",
-                "128",
-                "58"
-              ],
-              "port": "6981",
-              "path": [
-                "WSAdministracion0013",
-                "soap",
-                "WSAdministracion0013Request"
-              ]
-            },
-            "description": "Request Legacy del archivo original. El SOAPAction exportado apunta a ActualizarMontoTransferenciaCuenta31 (otra operación): confirmar valor correcto con WSDL/DEV. Comparar únicamente tras verificar que ambos ambientes reciban el mismo bodyIn y headerIn. No contiene credenciales de la sección Datos."
-          },
-          "response": []
-        },
-        {
-          "name": "actualizarAutorizadorMedioServicio34 - Dev",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "text/xml; charset=utf-8"
-              },
-              {
-                "key": "SOAPAction",
-                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <ser:actualizarAutorizadorMedioServicio34>\n\t\t\t<headerIn>\n\t\t\t\t<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n\t\t\t\t<empresa>0010</empresa>\n\t\t\t\t<canal>02</canal>\n\t\t\t\t<medio>020002</medio>\n\t\t\t\t<aplicacion>00647</aplicacion>\n\t\t\t\t<agencia>197</agencia>\n\t\t\t\t<tipoTransaccion>302000201</tipoTransaccion>\n\t\t\t\t<geolocalizacion>1234</geolocalizacion>\n\t\t\t\t<usuario>ISMAVEGA</usuario>\n\t\t\t\t<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n\t\t\t\t<guid>59cae047abad47d5b683388a132fbddf</guid>\n\t\t\t\t<fechaHora>202506251508450015</fechaHora>\n\t\t\t\t<filler/>\n\t\t\t\t<idioma>es-EC</idioma>\n\t\t\t\t<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n\t\t\t\t<ip>0.0.0.0</ip>\n\t\t\t\t<idCliente>0801545674</idCliente>\n\t\t\t\t<tipoIdCliente>0001</tipoIdCliente>\n\t\t\t\t<!--Optional:-->\n\t\t\t\t<bancs>\n\t\t\t\t\t<teller>00070560</teller>\n\t\t\t\t\t<terminal>1</terminal>\n\t\t\t\t\t<institucion>0010</institucion>\n\t\t\t\t\t<agencia>1</agencia>\n\t\t\t\t\t<estacion>1</estacion>\n\t\t\t\t\t<aplicacion/>\n\t\t\t\t\t<canal/>\n\t\t\t\t</bancs>\n\t\t\t</headerIn>\n         <bodyIn>\n            <!--Optional:-->\n            <agenciaAutorizaMedioServi>0197</agenciaAutorizaMedioServi>\n            <!--Optional:-->\n            <usuarioIngresoAutorizaMedioServi>MIGRACION</usuarioIngresoAutorizaMedioServi>\n            <!--Optional:-->\n            <codigoMedioCatDetalle>12</codigoMedioCatDetalle>\n            <!--Optional:-->\n            <codigoEmpresaServicio>365</codigoEmpresaServicio>\n            <!--Optional:-->\n            <codigoTipoAutorizador>2</codigoTipoAutorizador>\n            <!--Optional:-->\n            <codigoAutorizaMedioServi>366</codigoAutorizaMedioServi>\n         </bodyIn>\n      </ser:actualizarAutorizadorMedioServicio34>\n   </soapenv:Body>\n</soapenv:Envelope>",
-              "options": {
-                "raw": {
-                  "language": "xml"
-                }
-              }
-            },
-            "url": {
-              "raw": "https://tca-msa-sp-wsadministracion0013-enp.apps.ocpdev.uiotest.bpichinchatest.test/WSAdministracion0013/soap/WSAdministracion0013Request",
-              "protocol": "https",
-              "host": [
-                "tca-msa-sp-wsadministracion0013-enp",
-                "apps",
-                "ocpdev",
-                "uiotest",
-                "bpichinchatest",
-                "test"
-              ],
-              "path": [
-                "WSAdministracion0013",
-                "soap",
-                "WSAdministracion0013Request"
-              ]
-            },
-            "description": "Request Dev del archivo original. El SOAPAction exportado apunta a ActualizarMontoTransferenciaCuenta31 (otra operación): confirmar valor correcto con WSDL/DEV. Comparar únicamente tras verificar que ambos ambientes reciban el mismo bodyIn y headerIn. No contiene credenciales de la sección Datos."
-          },
-          "response": []
-        }
-      ]
-    },
-    {
-      "name": "consultarAutorizadorMedioServicio01",
-      "item": [
-        {
-          "name": "consultarAutorizadorMedioServicio01 - Legacy",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "text/xml; charset=utf-8"
-              },
-              {
-                "key": "SOAPAction",
-                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:consultarAutorizadorMedioServicio01>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <!--Optional:-->\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <!--Optional:-->\n            <bodyIn>\n                <!--Optional:-->\n                <agenciaAutorizaMedioServi></agenciaAutorizaMedioServi>\n                <!--Optional:-->\n                <usuarioIngresoAutorizaMedioServi></usuarioIngresoAutorizaMedioServi>\n                <!--Optional:-->\n                <codigoMedioCatDetalle></codigoMedioCatDetalle>\n                <!--Optional:-->\n                <codigoEmpresaServicio></codigoEmpresaServicio>\n                <!--Optional:-->\n                <codigoTipoAutorizador></codigoTipoAutorizador>\n                <!--Optional:-->\n                <codigoAutorizaMedioServi></codigoAutorizaMedioServi>\n                <!--Optional:-->\n                <fechaIngresoAutorizaMedioServi></fechaIngresoAutorizaMedioServi>\n            </bodyIn>\n        </ser:consultarAutorizadorMedioServicio01>\n    </soapenv:Body>\n</soapenv:Envelope>",
-              "options": {
-                "raw": {
-                  "language": "xml"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://10.60.128.58:6981/WSAdministracion0013/soap/WSAdministracion0013Request",
-              "protocol": "http",
-              "host": [
-                "10",
-                "60",
-                "128",
-                "58"
-              ],
-              "port": "6981",
-              "path": [
-                "WSAdministracion0013",
-                "soap",
-                "WSAdministracion0013Request"
-              ]
-            },
-            "description": "Request Legacy del archivo original. El SOAPAction exportado apunta a ActualizarMontoTransferenciaCuenta31 (otra operación): confirmar valor correcto con WSDL/DEV. Comparar únicamente tras verificar que ambos ambientes reciban el mismo bodyIn y headerIn. No contiene credenciales de la sección Datos."
-          },
-          "response": []
-        },
-        {
-          "name": "consultarAutorizadorMedioServicio01 - Dev",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "text/xml; charset=utf-8"
-              },
-              {
-                "key": "SOAPAction",
-                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:consultarAutorizadorMedioServicio01>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <!--Optional:-->\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <!--Optional:-->\n            <bodyIn>\n                <!--Optional:-->\n                <agenciaAutorizaMedioServi></agenciaAutorizaMedioServi>\n                <!--Optional:-->\n                <usuarioIngresoAutorizaMedioServi></usuarioIngresoAutorizaMedioServi>\n                <!--Optional:-->\n                <codigoMedioCatDetalle></codigoMedioCatDetalle>\n                <!--Optional:-->\n                <codigoEmpresaServicio></codigoEmpresaServicio>\n                <!--Optional:-->\n                <codigoTipoAutorizador></codigoTipoAutorizador>\n                <!--Optional:-->\n                <codigoAutorizaMedioServi>1224</codigoAutorizaMedioServi>\n                <!--Optional:-->\n                <fechaIngresoAutorizaMedioServi></fechaIngresoAutorizaMedioServi>\n            </bodyIn>\n        </ser:consultarAutorizadorMedioServicio01>\n    </soapenv:Body>\n</soapenv:Envelope>",
-              "options": {
-                "raw": {
-                  "language": "xml"
-                }
-              }
-            },
-            "url": {
-              "raw": "https://tca-msa-sp-wsadministracion0013-enp.apps.ocpdev.uiotest.bpichinchatest.test/WSAdministracion0013/soap/WSAdministracion0013Request",
-              "protocol": "https",
-              "host": [
-                "tca-msa-sp-wsadministracion0013-enp",
-                "apps",
-                "ocpdev",
-                "uiotest",
-                "bpichinchatest",
-                "test"
-              ],
-              "path": [
-                "WSAdministracion0013",
-                "soap",
-                "WSAdministracion0013Request"
-              ]
-            },
-            "description": "Request Dev del archivo original. El SOAPAction exportado apunta a ActualizarMontoTransferenciaCuenta31 (otra operación): confirmar valor correcto con WSDL/DEV. Comparar únicamente tras verificar que ambos ambientes reciban el mismo bodyIn y headerIn. No contiene credenciales de la sección Datos."
-          },
-          "response": []
-        }
-      ]
-    },
-    {
-      "name": "eliminarAutorizadorMedioServicio43",
-      "item": [
-        {
-          "name": "eliminarAutorizadorMedioServicio43 - Legacy",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "text/xml; charset=utf-8"
-              },
-              {
-                "key": "SOAPAction",
-                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:eliminarAutorizadorMedioServicio43>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <!--Optional:-->\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <!--Optional:-->\n                <codigoAutorizaMedioServi>366</codigoAutorizaMedioServi>\n                <!--Optional:-->\n                <habilitadoAutorizaMedioServi>0</habilitadoAutorizaMedioServi>\n            </bodyIn>\n        </ser:eliminarAutorizadorMedioServicio43>\n    </soapenv:Body>\n</soapenv:Envelope>",
-              "options": {
-                "raw": {
-                  "language": "xml"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://10.60.128.58:6981/WSAdministracion0013/soap/WSAdministracion0013Request",
-              "protocol": "http",
-              "host": [
-                "10",
-                "60",
-                "128",
-                "58"
-              ],
-              "port": "6981",
-              "path": [
-                "WSAdministracion0013",
-                "soap",
-                "WSAdministracion0013Request"
-              ]
-            },
-            "description": "Request Legacy del archivo original. El SOAPAction exportado apunta a ActualizarMontoTransferenciaCuenta31 (otra operación): confirmar valor correcto con WSDL/DEV. Comparar únicamente tras verificar que ambos ambientes reciban el mismo bodyIn y headerIn. No contiene credenciales de la sección Datos."
-          },
-          "response": []
-        },
-        {
-          "name": "eliminarAutorizadorMedioServicio43 - Dev",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "text/xml; charset=utf-8"
-              },
-              {
-                "key": "SOAPAction",
-                "value": "http://bpichincha.com/servicios/ActualizarMontoTransferenciaCuenta31"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://bpichincha.com/servicios\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <ser:eliminarAutorizadorMedioServicio43>\n            <headerIn>\n                <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>\n                <empresa>0010</empresa>\n                <canal>02</canal>\n                <medio>020002</medio>\n                <aplicacion>00647</aplicacion>\n                <agencia>197</agencia>\n                <tipoTransaccion>302000201</tipoTransaccion>\n                <geolocalizacion>1234</geolocalizacion>\n                <usuario>ISMAVEGA</usuario>\n                <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>\n                <guid>59cae047abad47d5b683388a132fbddf</guid>\n                <fechaHora>202506251508450015</fechaHora>\n                <filler/>\n                <idioma>es-EC</idioma>\n                <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>\n                <ip>0.0.0.0</ip>\n                <idCliente>0801545674</idCliente>\n                <tipoIdCliente>0001</tipoIdCliente>\n                <!--Optional:-->\n                <bancs>\n                    <teller>00070560</teller>\n                    <terminal>1</terminal>\n                    <institucion>0010</institucion>\n                    <agencia>1</agencia>\n                    <estacion>1</estacion>\n                    <aplicacion/>\n                    <canal/>\n                </bancs>\n            </headerIn>\n            <bodyIn>\n                <!--Optional:-->\n                <codigoAutorizaMedioServi>366</codigoAutorizaMedioServi>\n                <!--Optional:-->\n                <habilitadoAutorizaMedioServi>0</habilitadoAutorizaMedioServi>\n            </bodyIn>\n        </ser:eliminarAutorizadorMedioServicio43>\n    </soapenv:Body>\n</soapenv:Envelope>",
-              "options": {
-                "raw": {
-                  "language": "xml"
-                }
-              }
-            },
-            "url": {
-              "raw": "https://tca-msa-sp-wsadministracion0013-enp.apps.ocpdev.uiotest.bpichinchatest.test/WSAdministracion0013/soap/WSAdministracion0013Request",
-              "protocol": "https",
-              "host": [
-                "tca-msa-sp-wsadministracion0013-enp",
-                "apps",
-                "ocpdev",
-                "uiotest",
-                "bpichinchatest",
-                "test"
-              ],
-              "path": [
-                "WSAdministracion0013",
-                "soap",
-                "WSAdministracion0013Request"
-              ]
-            },
-            "description": "Request Dev del archivo original. El SOAPAction exportado apunta a ActualizarMontoTransferenciaCuenta31 (otra operación): confirmar valor correcto con WSDL/DEV. Comparar únicamente tras verificar que ambos ambientes reciban el mismo bodyIn y headerIn. No contiene credenciales de la sección Datos."
-          },
-          "response": []
-        }
-      ]
-    }
-  ]
-}
+legado
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:guardarAutorizadorMedioServicio22Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<autorizaMedioServicios/>
+			</bodyOut>
+			<error>
+				<codigo>9999</codigo>
+				<mensaje>VHReglas-nested exception is: javax.transaction.RollbackException</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>FATAL</tipo>
+				<recurso>WSAdministracion0013/guardarAutorizadorMedioServicio22</recurso>
+				<componente>WSAdministracion0013</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:guardarAutorizadorMedioServicio22Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+migrado
+<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:guardarAutorizadorMedioServicio22Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler/>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<autorizaMedioServicios/>
+			</bodyOut>
+			<error>
+				<codigo>9999</codigo>
+				<mensaje>nested exception is: javax.transaction.RollbackException</mensaje>
+				<mensajeNegocio/>
+				<tipo>FATAL</tipo>
+				<recurso>tca-msa-sp-wsadministracion0013/guardarAutorizadorMedioServicio22</recurso>
+				<componente>tca-msa-sp-wsadministracion0013</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:guardarAutorizadorMedioServicio22Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+legado  idcliente campo vacion 
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:guardarAutorizadorMedioServicio22Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente></idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<autorizaMedioServicios/>
+			</bodyOut>
+			<error>
+				<codigo>9999</codigo>
+				<mensaje>VHReglas-nested exception is: javax.transaction.RollbackException</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>FATAL</tipo>
+				<recurso>WSAdministracion0013/guardarAutorizadorMedioServicio22</recurso>
+				<componente>WSAdministracion0013</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:guardarAutorizadorMedioServicio22Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+migrado sin camo cedula 
+<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:guardarAutorizadorMedioServicio22Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler/>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente/>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<autorizaMedioServicios/>
+			</bodyOut>
+			<error>
+				<codigo>9999</codigo>
+				<mensaje>nested exception is: javax.transaction.RollbackException</mensaje>
+				<mensajeNegocio/>
+				<tipo>FATAL</tipo>
+				<recurso>tca-msa-sp-wsadministracion0013/guardarAutorizadorMedioServicio22</recurso>
+				<componente>tca-msa-sp-wsadministracion0013</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:guardarAutorizadorMedioServicio22Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+legado campo cedula con letras
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:guardarAutorizadorMedioServicio22Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>abc</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<autorizaMedioServicios/>
+			</bodyOut>
+			<error>
+				<codigo>9999</codigo>
+				<mensaje>VHReglas-nested exception is: javax.transaction.RollbackException</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>FATAL</tipo>
+				<recurso>WSAdministracion0013/guardarAutorizadorMedioServicio22</recurso>
+				<componente>WSAdministracion0013</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:guardarAutorizadorMedioServicio22Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+migrado  campo idcliente conletras
+<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:guardarAutorizadorMedioServicio22Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler/>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>abc</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<autorizaMedioServicios/>
+			</bodyOut>
+			<error>
+				<codigo>9999</codigo>
+				<mensaje>nested exception is: javax.transaction.RollbackException</mensaje>
+				<mensajeNegocio/>
+				<tipo>FATAL</tipo>
+				<recurso>tca-msa-sp-wsadministracion0013/guardarAutorizadorMedioServicio22</recurso>
+				<componente>tca-msa-sp-wsadministracion0013</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:guardarAutorizadorMedioServicio22Response>
+	</soapenv:Body>
+</soapenv:Envelope>
