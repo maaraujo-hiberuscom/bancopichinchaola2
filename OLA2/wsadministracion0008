@@ -1,0 +1,219 @@
+curl --location "http://10.60.128.58:6981/WSAdministracion0008/soap/WSAdministracion0008Request" \
+  --request POST \
+  --header "Content-Type: text/xml; charset=utf-8" \
+  --header "SOAPAction: http://bpichincha.com/servicios/actualizarEmpresa34" \
+  --data-raw '<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ser:actualizarEmpresa34>
+      <headerIn>
+        <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+        <empresa>0010</empresa>
+        <canal>02</canal>
+        <medio>020002</medio>
+        <aplicacion>00647</aplicacion>
+        <agencia>197</agencia>
+        <tipoTransaccion>302000201</tipoTransaccion>
+        <geolocalizacion>1234</geolocalizacion>
+        <usuario>ISMAVEGA</usuario>
+        <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+        <guid>59cae047abad47d5b683388a132fbddf</guid>
+        <fechaHora>202506251508450015</fechaHora>
+        <filler/>
+        <idioma>es-EC</idioma>
+        <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+        <ip>0.0.0.0</ip>
+        <idCliente>0801545674</idCliente>
+        <tipoIdCliente>0001</tipoIdCliente>
+        <bancs>
+          <teller>00070560</teller>
+          <terminal>1</terminal>
+          <institucion>0010</institucion>
+          <agencia>1</agencia>
+          <estacion>1</estacion>
+          <aplicacion/>
+          <canal/>
+        </bancs>
+      </headerIn>
+      <bodyIn>
+        <codigoEmpresa>8313</codigoEmpresa>
+        <aliasEmpresa>EMGIRS EP EDITADO</aliasEmpresa>
+        <descripcionEmpresa>SERVICIOS VARIOS EDITADO</descripcionEmpresa>
+        <flagMasUtilizada>0</flagMasUtilizada>
+        <fechaInscripcionEmpresa>2018-06-01T10:57:26.407-05:00</fechaInscripcionEmpresa>
+        <nombreCortoEmpresa>EMGIRS EP EMPRESA DE GEST EDITADO</nombreCortoEmpresa>
+        <identificacionEmpresa>1768158410001</identificacionEmpresa>
+        <razonSocial>EMGIRS EP EMPRESA DE GESTION R</razonSocial>
+        <logotipo>0</logotipo>
+        <nombreLogotipoEmpresa>0</nombreLogotipoEmpresa>
+        <visible>1</visible>
+        <rutaLogotipoEmpresa>0</rutaLogotipoEmpresa>
+        <secuencial>0</secuencial>
+      </bodyIn>
+    </ser:actualizarEmpresa34>
+  </soapenv:Body>
+</soapenv:Envelope>'
+
+-----------------------------------------------------------------------------------------------------
+curl --location "http://10.60.128.58:6981/WSAdministracion0008/soap/WSAdministracion0008Request" \
+  --request POST \
+  --header "Content-Type: text/xml; charset=utf-8" \
+  --header "SOAPAction: http://bpichincha.com/servicios/consultarEmpresa01" \
+  --data-raw '<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ser:consultarEmpresa01>
+      <headerIn>
+        <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+        <empresa>0010</empresa>
+        <canal>02</canal>
+        <medio>020002</medio>
+        <aplicacion>00647</aplicacion>
+        <agencia>197</agencia>
+        <tipoTransaccion>302000201</tipoTransaccion>
+        <geolocalizacion>1234</geolocalizacion>
+        <usuario>ISMAVEGA</usuario>
+        <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+        <guid>59cae047abad47d5b683388a132fbddf</guid>
+        <fechaHora>202506251508450015</fechaHora>
+        <filler/>
+        <idioma>es-EC</idioma>
+        <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+        <ip>0.0.0.0</ip>
+        <idCliente>0801545674</idCliente>
+        <tipoIdCliente>0001</tipoIdCliente>
+        <bancs>
+          <teller>00070560</teller>
+          <terminal>1</terminal>
+          <institucion>0010</institucion>
+          <agencia>1</agencia>
+          <estacion>1</estacion>
+          <aplicacion/>
+          <canal/>
+        </bancs>
+      </headerIn>
+      <bodyIn>
+        <codigoEmpresa>885</codigoEmpresa>
+        <aliasEmpresa></aliasEmpresa>
+        <descripcionEmpresa></descripcionEmpresa>
+        <fechaIngresoEmpresa></fechaIngresoEmpresa>
+        <fechaInscripcionEmpresa></fechaInscripcionEmpresa>
+        <flagMasUtilizada></flagMasUtilizada>
+        <identificacionEmpresa></identificacionEmpresa>
+        <nombreCortoEmpresa></nombreCortoEmpresa>
+        <nombreLogotipoEmpresa></nombreLogotipoEmpresa>
+        <razonSocial></razonSocial>
+        <rutaLogotipoEmpresa></rutaLogotipoEmpresa>
+        <visible></visible>
+        <usuarioIngresoEmpresa>MIGRACION</usuarioIngresoEmpresa>
+      </bodyIn>
+    </ser:consultarEmpresa01>
+  </soapenv:Body>
+</soapenv:Envelope>'
+-------------------------------------------------------------------------
+curl --location "http://10.60.128.58:6981/WSAdministracion0008/soap/WSAdministracion0008Request" \
+  --request POST \
+  --header "Content-Type: text/xml; charset=utf-8" \
+  --header "SOAPAction: http://bpichincha.com/servicios/eliminarEmpresa43" \
+  --data-raw '<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ser:eliminarEmpresa43>
+      <headerIn>
+        <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+        <empresa>0010</empresa>
+        <canal>02</canal>
+        <medio>020002</medio>
+        <aplicacion>00647</aplicacion>
+        <agencia>197</agencia>
+        <tipoTransaccion>302000201</tipoTransaccion>
+        <geolocalizacion>1234</geolocalizacion>
+        <usuario>ISMAVEGA</usuario>
+        <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+        <guid>59cae047abad47d5b683388a132fbddf</guid>
+        <fechaHora>202506251508450015</fechaHora>
+        <filler/>
+        <idioma>es-EC</idioma>
+        <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+        <ip>0.0.0.0</ip>
+        <idCliente>0801545674</idCliente>
+        <tipoIdCliente>0001</tipoIdCliente>
+        <bancs>
+          <teller>00070560</teller>
+          <terminal>1</terminal>
+          <institucion>0010</institucion>
+          <agencia>1</agencia>
+          <estacion>1</estacion>
+          <aplicacion/>
+          <canal/>
+        </bancs>
+      </headerIn>
+      <bodyIn>
+        <codigoEmpresa>1166</codigoEmpresa>
+      </bodyIn>
+    </ser:eliminarEmpresa43>
+  </soapenv:Body>
+</soapenv:Envelope>'
+-------------------------------------------------------------------------------------------------------
+curl --location "http://10.60.128.58:6981/WSAdministracion0008/soap/WSAdministracion0008Request" \
+  --request POST \
+  --header "Content-Type: text/xml; charset=utf-8" \
+  --header "SOAPAction: http://bpichincha.com/servicios/guardarEmpresa22" \
+  --data-raw '<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://bpichincha.com/servicios">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ser:guardarEmpresa22>
+      <headerIn>
+        <dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+        <empresa>0010</empresa>
+        <canal>02</canal>
+        <medio>020002</medio>
+        <aplicacion>00647</aplicacion>
+        <agencia>197</agencia>
+        <tipoTransaccion>302000201</tipoTransaccion>
+        <geolocalizacion>1234</geolocalizacion>
+        <usuario>ISMAVEGA</usuario>
+        <unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+        <guid>59cae047abad47d5b683388a132fbddf</guid>
+        <fechaHora>202506251508450015</fechaHora>
+        <filler/>
+        <idioma>es-EC</idioma>
+        <sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+        <ip>0.0.0.0</ip>
+        <idCliente>0801545674</idCliente>
+        <tipoIdCliente>0001</tipoIdCliente>
+        <bancs>
+          <teller>00070560</teller>
+          <terminal>1</terminal>
+          <institucion>0010</institucion>
+          <agencia>1</agencia>
+          <estacion>1</estacion>
+          <aplicacion/>
+          <canal/>
+        </bancs>
+      </headerIn>
+      <bodyIn>
+        <aliasEmpresa>TEST1</aliasEmpresa>
+        <descripcionEmpresa>DATATESTS01</descripcionEmpresa>
+        <fechaInscripcionEmpresa>2026-08-26T08:57:34.277-05:00</fechaInscripcionEmpresa>
+        <flagMasUtilizada>0</flagMasUtilizada>
+        <identificacionEmpresa>0990123456789</identificacionEmpresa>
+        <nombreCortoEmpresa>TESTMIG2026</nombreCortoEmpresa>
+        <nombreLogotipoEmpresa>vacio.gif</nombreLogotipoEmpresa>
+        <razonSocial>TESTMIGRACION2026</razonSocial>
+        <rutaLogotipoEmpresa>0</rutaLogotipoEmpresa>
+        <usuarioIngresoEmpresa>MIGRACION2026</usuarioIngresoEmpresa>
+        <visible>1</visible>
+        <logotipo>0</logotipo>
+        <secuencial>0</secuencial>
+      </bodyIn>
+    </ser:guardarEmpresa22>
+  </soapenv:Body>
+</soapenv:Envelope>'
+-------------------------------------------------------------------------------------------------------------------------------
+http://tca-msa-sp-wsadministracion0008.apps.ocpdev.uiotest.bpichinchatest.test/WSAdministracion0008/soap/WSAdministracion0008Request
+ 
