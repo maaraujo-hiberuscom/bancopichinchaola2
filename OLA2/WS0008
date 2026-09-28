@@ -1,0 +1,116 @@
+LEGADO COMPLETO
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarEmpresa01Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<empresas>
+					<empresa>
+						<codigoEmpresa>885</codigoEmpresa>
+						<aliasEmpresa>PARCOR SA</aliasEmpresa>
+						<descripcionEmpresa>SERVICIOS VARIOS</descripcionEmpresa>
+						<fechaIngresoEmpresa>2018-04-13T11:45:42-05:00</fechaIngresoEmpresa>
+						<fechaInscripcionEmpresa>2010-09-16T10:22:54.053-05:00</fechaInscripcionEmpresa>
+						<flagMasUtilizada>0</flagMasUtilizada>
+						<identificacionEmpresa>1391734379001</identificacionEmpresa>
+						<nombreCortoEmpresa>PARCOR SA</nombreCortoEmpresa>
+						<nombreLogotipoEmpresa>vacio.gif</nombreLogotipoEmpresa>
+						<razonSocial>PARCOR SA</razonSocial>
+						<usuarioIngresoEmpresa>MIGRACION</usuarioIngresoEmpresa>
+						<visible>1</visible>
+						<secuencial>0</secuencial>
+					</empresa>
+				</empresas>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>VHReglas-OK</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>INFO</tipo>
+				<recurso>WSAdministracion0008/consultarEmpresa01</recurso>
+				<componente>WSAdministracion0008</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:consultarEmpresa01Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+MIGRADO 
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarEmpresa01Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler/>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<empresas>
+					<empresa>
+						<codigoEmpresa>885</codigoEmpresa>
+						<aliasEmpresa>PARCOR SA</aliasEmpresa>
+						<descripcionEmpresa>SERVICIOS VARIOS</descripcionEmpresa>
+						<fechaIngresoEmpresa>2018-04-13T11:45:42.000-05:00</fechaIngresoEmpresa>
+						<fechaInscripcionEmpresa>2010-09-16T10:22:54.053-05:00</fechaInscripcionEmpresa>
+						<flagMasUtilizada>0</flagMasUtilizada>
+						<identificacionEmpresa>1391734379001</identificacionEmpresa>
+						<nombreCortoEmpresa>PARCOR SA</nombreCortoEmpresa>
+						<nombreLogotipoEmpresa>vacio.gif</nombreLogotipoEmpresa>
+						<razonSocial>PARCOR SA</razonSocial>
+						<usuarioIngresoEmpresa>MIGRACION</usuarioIngresoEmpresa>
+						<visible>0</visible>
+						<secuencial>0</secuencial>
+					</empresa>
+				</empresas>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>OK</mensaje>
+				<mensajeNegocio/>
+				<tipo>INFO</tipo>
+				<recurso>tca-msa-sp-wsadministracion0008/consultarEmpresa01</recurso>
+				<componente>tca-msa-sp-wsadministracion0008</componente>
+				<backend>00641</backend>
+			</error>
+		</ns2:consultarEmpresa01Response>
+	</soapenv:Body>
+</soapenv:Envelope>
