@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <soapenv:Envelope
-	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ser="http://bpichincha.com/servicios">
-	<soapenv:Header/>
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
 	<soapenv:Body>
-		<ser:consultarEmpresa01>
-			<headerIn>
+		<ns2:consultarEmpresa01Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
 				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
 				<empresa>0010</empresa>
 				<canal>02</canal>
@@ -18,37 +17,25 @@
 				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
 				<guid>59cae047abad47d5b683388a132fbddf</guid>
 				<fechaHora>202506251508450015</fechaHora>
-				<filler/>
+				<filler></filler>
 				<idioma>es-EC</idioma>
 				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
 				<ip>0.0.0.0</ip>
 				<idCliente>0801545674</idCliente>
 				<tipoIdCliente>0001</tipoIdCliente>
-				<bancs>
-					<teller>00070560</teller>
-					<terminal>1</terminal>
-					<institucion>0010</institucion>
-					<agencia>1</agencia>
-					<estacion>1</estacion>
-					<aplicacion/>
-					<canal/>
-				</bancs>
-			</headerIn>
-			<bodyIn>
-				<codigoEmpresa>885</codigoEmpresa>
-				<aliasEmpresa></aliasEmpresa>
-				<descripcionEmpresa></descripcionEmpresa>
-				<fechaIngresoEmpresa></fechaIngresoEmpresa>
-				<fechaInscripcionEmpresa></fechaInscripcionEmpresa>
-				<flagMasUtilizada></flagMasUtilizada>
-				<identificacionEmpresa></identificacionEmpresa>
-				<nombreCortoEmpresa></nombreCortoEmpresa>
-				<nombreLogotipoEmpresa></nombreLogotipoEmpresa>
-				<razonSocial></razonSocial>
-				<rutaLogotipoEmpresa></rutaLogotipoEmpresa>
-				<visible></visible>
-				<usuarioIngresoEmpresa>MIGRACION</usuarioIngresoEmpresa>
-			</bodyIn>
-		</ser:consultarEmpresa01>
+			</headerOut>
+			<bodyOut>
+				<empresas/>
+			</bodyOut>
+			<error>
+				<codigo>0003</codigo>
+				<mensaje>VHReglas-No existen datos en la base.</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPAdministracion0022/consultarEmpresa01</recurso>
+				<componente>OmnEmpEmpresa</componente>
+				<backend>00634</backend>
+			</error>
+		</ns2:consultarEmpresa01Response>
 	</soapenv:Body>
 </soapenv:Envelope>
