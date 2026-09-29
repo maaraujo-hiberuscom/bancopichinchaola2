@@ -1,102 +1,4 @@
-LEGADO COMPLETO
-<?xml version="1.0" encoding="utf-8"?>
-<soapenv:Envelope
-	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-	<soapenv:Body>
-		<ns2:consultarCreditoDesembolsoSFI01Response
-			xmlns:ns2="http://bpichincha.com/servicios">
-			<headerOut>
-				<dispositivo>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C</dispositivo>
-				<empresa>0010</empresa>
-				<canal>03</canal>
-				<medio>030006</medio>
-				<aplicacion>00663</aplicacion>
-				<agencia></agencia>
-				<tipoTransaccion>201008702</tipoTransaccion>
-				<geolocalizacion>-2.1440455863586054,-79.87843994778339</geolocalizacion>
-				<usuario>USINTERT</usuario>
-				<unicidad>96bf3d6246516de36bfa047606ceceb57beec20fb33f72192d84d849e7fda7a1</unicidad>
-				<guid>c575b948dae54be0a00204de8f4613b4</guid>
-				<fechaHora>202606161350120912</fechaHora>
-				<filler>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C|--|02:00:00:00:00:00|iOS|18.7.8|Apple|iPhone</filler>
-				<idioma>es-EC</idioma>
-				<sesion>7946c1ed-e473-41bd-95e0-a426ebb4d119</sesion>
-				<ip>190.63.254.2</ip>
-				<idCliente>1203244080</idCliente>
-				<tipoIdCliente>0001</tipoIdCliente>
-			</headerOut>
-			<bodyOut>
-				<credito>
-					<externalId>DSMBL_0906970447_010140_53928_54</externalId>
-					<externalType>DESEMBOLSO</externalType>
-					<fechaCancelacion>2026/10/16 04:59:59.000</fechaCancelacion>
-					<montoAprobado>5000.00</montoAprobado>
-					<plazoAprobado>1440</plazoAprobado>
-					<frecuenciaAprobado>30</frecuenciaAprobado>
-					<codigoTipoGarantia>NOG</codigoTipoGarantia>
-					<tipoGarantia>SIN GARANTE</tipoGarantia>
-					<fechaCaducidadOferta>2026/09/30 04:59:59.000</fechaCaducidadOferta>
-					<periodoGraciaAprobado>0</periodoGraciaAprobado>
-					<tasaNominal>22.43</tasaNominal>
-					<tipoAmortizacionAprobado>F</tipoAmortizacionAprobado>
-					<estadoCivilDeudor>CASADO</estadoCivilDeudor>
-					<separadoDeudor>NO</separadoDeudor>
-					<separacionBienesDeudor>NO</separacionBienesDeudor>
-					<codigoOferta>CPP</codigoOferta>
-					<numeroCifDeudor>3699254</numeroCifDeudor>
-					<actividadEconomicaDeudor>23161</actividadEconomicaDeudor>
-					<nombreActividadEconomicaDeudor>G453000|LLANTAS</nombreActividadEconomicaDeudor>
-					<tipoIdentificacionCodeudor>0001</tipoIdentificacionCodeudor>
-					<identificacionCodeudor>0104691290</identificacionCodeudor>
-					<numeroCifCodeudor>5322125</numeroCifCodeudor>
-					<desestimientoCodeudor>NO</desestimientoCodeudor>
-					<centroCostos>12</centroCostos>
-					<tipoCredito>N</tipoCredito>
-					<codigoAgencia>12</codigoAgencia>
-					<codAsegDesg>PDI</codAsegDesg>
-					<nombAsegDesg>Seguro del Pichincha</nombAsegDesg>
-					<codSegDesg>1</codSegDesg>
-					<nombSegDesg>Desgravamen Firmas</nombSegDesg>
-					<productoBancs>5241</productoBancs>
-					<subProductoBancs>2145</subProductoBancs>
-					<segmento>PERSONAS</segmento>
-					<subsegmento>MICROEMPRESA</subsegmento>
-					<fechaNacimientoDeudor>15/12/1978</fechaNacimientoDeudor>
-					<fechaNacimientoCodeudor>09/12/1946</fechaNacimientoCodeudor>
-					<fechaValorCancelacion></fechaValorCancelacion>
-					<nicho>MICROFINANZAS INDIVIDUAL</nicho>
-					<usuarioAprobadorSfi>LVILLA</usuarioAprobadorSfi>
-					<destinoFinanciero>210</destinoFinanciero>
-					<codigoCiudadCC></codigoCiudadCC>
-					<tipoIdentificacionGarante></tipoIdentificacionGarante>
-					<identificacionGarante></identificacionGarante>
-					<numeroCifGarante></numeroCifGarante>
-					<fechaNacimientoGarante></fechaNacimientoGarante>
-					<tipoIdentificacionCoGarante></tipoIdentificacionCoGarante>
-					<identificacionCoGarante></identificacionCoGarante>
-					<numeroCifCoGarante></numeroCifCoGarante>
-					<fechaNacimientoCoGarante></fechaNacimientoCoGarante>
-					<operacion></operacion>
-					<paisCodigoNego>EC</paisCodigoNego>
-					<provinciaCodigoNego>05</provinciaCodigoNego>
-					<cantonCodigoNego>0501</cantonCodigoNego>
-					<parroquiaCodigoNego>050157</parroquiaCodigoNego>
-					<ciudadCodigoNego>0100</ciudadCodigoNego>
-				</credito>
-			</bodyOut>
-			<error>
-				<codigo>0</codigo>
-				<mensaje>VHReglas-OK</mensaje>
-				<mensajeNegocio></mensajeNegocio>
-				<tipo>INFO</tipo>
-				<recurso>WSProductos0143/consultarCreditoDesembolsoSFI01</recurso>
-				<componente>consultarCreditoDesembolsoSFI01</componente>
-				<backend>00633</backend>
-			</error>
-		</ns2:consultarCreditoDesembolsoSFI01Response>
-	</soapenv:Body>
-</soapenv:Envelope>
-MIGRADO COMPLETO
+migrado tag identificacion campo vacio 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:Envelope
 	xmlns:ns2="http://schemas.xmlsoap.org/soap/envelope/"
@@ -123,70 +25,11 @@ MIGRADO COMPLETO
 				<idCliente>1203244080</idCliente>
 				<tipoIdCliente>0001</tipoIdCliente>
 			</headerOut>
-			<bodyOut>
-				<credito>
-					<externalId>DSMBL_0906970447_010140_53928_53</externalId>
-					<externalType>DESEMBOLSO</externalType>
-					<fechaCancelacion>2026/10/16 04:59:59.000</fechaCancelacion>
-					<montoAprobado>5000.00</montoAprobado>
-					<plazoAprobado>1440</plazoAprobado>
-					<frecuenciaAprobado>30</frecuenciaAprobado>
-					<codigoTipoGarantia>NOG</codigoTipoGarantia>
-					<tipoGarantia>SIN GARANTE</tipoGarantia>
-					<fechaCaducidadOferta>2026/09/30 04:59:59.000</fechaCaducidadOferta>
-					<periodoGraciaAprobado>0</periodoGraciaAprobado>
-					<tasaNominal>22.43</tasaNominal>
-					<tipoAmortizacionAprobado>F</tipoAmortizacionAprobado>
-					<estadoCivilDeudor>CASADO</estadoCivilDeudor>
-					<separadoDeudor>NO</separadoDeudor>
-					<separacionBienesDeudor>NO</separacionBienesDeudor>
-					<codigoOferta>CPP</codigoOferta>
-					<numeroCifDeudor>3699254</numeroCifDeudor>
-					<actividadEconomicaDeudor>23161</actividadEconomicaDeudor>
-					<nombreActividadEconomicaDeudor>G453000|LLANTAS</nombreActividadEconomicaDeudor>
-					<tipoIdentificacionCodeudor>0001</tipoIdentificacionCodeudor>
-					<identificacionCodeudor>0104691290</identificacionCodeudor>
-					<numeroCifCodeudor>5322125</numeroCifCodeudor>
-					<desestimientoCodeudor>NO</desestimientoCodeudor>
-					<centroCostos>12</centroCostos>
-					<tipoCredito>N</tipoCredito>
-					<codigoAgencia>12</codigoAgencia>
-					<codAsegDesg>PDI</codAsegDesg>
-					<nombAsegDesg>Seguro del Pichincha</nombAsegDesg>
-					<codSegDesg>1</codSegDesg>
-					<nombSegDesg>Desgravamen Firmas</nombSegDesg>
-					<productoBancs>5241</productoBancs>
-					<subProductoBancs>2145</subProductoBancs>
-					<segmento>PERSONAS</segmento>
-					<subsegmento>MICROEMPRESA</subsegmento>
-					<fechaNacimientoDeudor>15/12/1978</fechaNacimientoDeudor>
-					<fechaNacimientoCodeudor>09/12/1946</fechaNacimientoCodeudor>
-					<fechaValorCancelacion></fechaValorCancelacion>
-					<nicho>MICROFINANZAS INDIVIDUAL</nicho>
-					<usuarioAprobadorSfi>LVILLA</usuarioAprobadorSfi>
-					<destinoFinanciero>210</destinoFinanciero>
-					<codigoCiudadCC></codigoCiudadCC>
-					<tipoIdentificacionGarante></tipoIdentificacionGarante>
-					<identificacionGarante></identificacionGarante>
-					<numeroCifGarante></numeroCifGarante>
-					<fechaNacimientoGarante></fechaNacimientoGarante>
-					<tipoIdentificacionCoGarante></tipoIdentificacionCoGarante>
-					<identificacionCoGarante></identificacionCoGarante>
-					<numeroCifCoGarante></numeroCifCoGarante>
-					<fechaNacimientoCoGarante></fechaNacimientoCoGarante>
-					<operacion></operacion>
-					<paisCodigoNego>EC</paisCodigoNego>
-					<provinciaCodigoNego>05</provinciaCodigoNego>
-					<cantonCodigoNego>0501</cantonCodigoNego>
-					<parroquiaCodigoNego>050157</parroquiaCodigoNego>
-					<ciudadCodigoNego>0100</ciudadCodigoNego>
-				</credito>
-			</bodyOut>
 			<error>
-				<codigo>0</codigo>
-				<mensaje>OK</mensaje>
+				<codigo>1</codigo>
+				<mensaje>El valor del campo identificacion se encuentra vacio</mensaje>
 				<mensajeNegocio></mensajeNegocio>
-				<tipo>INFO</tipo>
+				<tipo>ERROR</tipo>
 				<recurso>tpr-msa-sp-wsproductos0143/consultarCreditoDesembolsoSFI01</recurso>
 				<componente>tpr-msa-sp-wsproductos0143</componente>
 				<backend>00633</backend>
@@ -194,3 +37,42 @@ MIGRADO COMPLETO
 		</ns3:consultarCreditoDesembolsoSFI01Response>
 	</ns2:Body>
 </ns2:Envelope>
+legado tag identificacion campovacio
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarCreditoDesembolsoSFI01Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>201008702</tipoTransaccion>
+				<geolocalizacion>-2.1440455863586054,-79.87843994778339</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad>96bf3d6246516de36bfa047606ceceb57beec20fb33f72192d84d849e7fda7a1</unicidad>
+				<guid>c575b948dae54be0a00204de8f4613b4</guid>
+				<fechaHora>202606161350120912</fechaHora>
+				<filler>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C|--|02:00:00:00:00:00|iOS|18.7.8|Apple|iPhone</filler>
+				<idioma>es-EC</idioma>
+				<sesion>7946c1ed-e473-41bd-95e0-a426ebb4d119</sesion>
+				<ip>190.63.254.2</ip>
+				<idCliente>1203244080</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>VHReglas-El valor del campo identificacion se encuentra vacio</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0191/consultarCreditoDesembolsoSFI01</recurso>
+				<componente>consultarCreditoDesembolsoSFI01</componente>
+				<backend>00633</backend>
+			</error>
+		</ns2:consultarCreditoDesembolsoSFI01Response>
+	</soapenv:Body>
+</soapenv:Envelope>
