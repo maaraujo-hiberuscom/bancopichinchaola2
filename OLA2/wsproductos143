@@ -1,3 +1,4 @@
+EP-002 
 migrado tag identificacion campo vacio 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ns2:Envelope
@@ -76,3 +77,161 @@ legado tag identificacion campovacio
 		</ns2:consultarCreditoDesembolsoSFI01Response>
 	</soapenv:Body>
 </soapenv:Envelope>
+EP-005
+LEGADO <canalDSMBL></canalDSMBL>
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarCreditoDesembolsoSFI01Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>201008702</tipoTransaccion>
+				<geolocalizacion>-2.1440455863586054,-79.87843994778339</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad>96bf3d6246516de36bfa047606ceceb57beec20fb33f72192d84d849e7fda7a1</unicidad>
+				<guid>c575b948dae54be0a00204de8f4613b4</guid>
+				<fechaHora>202606161350120912</fechaHora>
+				<filler>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C|--|02:00:00:00:00:00|iOS|18.7.8|Apple|iPhone</filler>
+				<idioma>es-EC</idioma>
+				<sesion>7946c1ed-e473-41bd-95e0-a426ebb4d119</sesion>
+				<ip>190.63.254.2</ip>
+				<idCliente>1203244080</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>VHReglas-El valor del campo canalDSMBL se encuentra vacio</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0191/consultarCreditoDesembolsoSFI01</recurso>
+				<componente>consultarCreditoDesembolsoSFI01</componente>
+				<backend>00633</backend>
+			</error>
+		</ns2:consultarCreditoDesembolsoSFI01Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+MIGRADO <canalDSMBL></canalDSMBL>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:Envelope
+	xmlns:ns2="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns3="http://bpichincha.com/servicios">
+	<ns2:Body>
+		<ns3:consultarCreditoDesembolsoSFI01Response>
+			<headerOut>
+				<dispositivo>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>201008702</tipoTransaccion>
+				<geolocalizacion>-2.1440455863586054,-79.87843994778339</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad>96bf3d6246516de36bfa047606ceceb57beec20fb33f72192d84d849e7fda7a1</unicidad>
+				<guid>c575b948dae54be0a00204de8f4613b4</guid>
+				<fechaHora>202606161350120912</fechaHora>
+				<filler>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C|--|02:00:00:00:00:00|iOS|18.7.8|Apple|iPhone</filler>
+				<idioma>es-EC</idioma>
+				<sesion>7946c1ed-e473-41bd-95e0-a426ebb4d119</sesion>
+				<ip>190.63.254.2</ip>
+				<idCliente>1203244080</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>El valor del campo canalDSMBL se encuentra vacio</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-wsproductos0143/consultarCreditoDesembolsoSFI01</recurso>
+				<componente>tpr-msa-sp-wsproductos0143</componente>
+				<backend>00633</backend>
+			</error>
+		</ns3:consultarCreditoDesembolsoSFI01Response>
+	</ns2:Body>
+</ns2:Envelope>
+EP-007
+LEGADO <endeudamientoMicro></endeudamientoMicro>
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarCreditoDesembolsoSFI01Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>201008702</tipoTransaccion>
+				<geolocalizacion>-2.1440455863586054,-79.87843994778339</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad>96bf3d6246516de36bfa047606ceceb57beec20fb33f72192d84d849e7fda7a1</unicidad>
+				<guid>c575b948dae54be0a00204de8f4613b4</guid>
+				<fechaHora>202606161350120912</fechaHora>
+				<filler>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C|--|02:00:00:00:00:00|iOS|18.7.8|Apple|iPhone</filler>
+				<idioma>es-EC</idioma>
+				<sesion>7946c1ed-e473-41bd-95e0-a426ebb4d119</sesion>
+				<ip>190.63.254.2</ip>
+				<idCliente>1203244080</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>VHReglas-El valor del campo endeudamientoMicro se encuentra vacio</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0191/consultarCreditoDesembolsoSFI01</recurso>
+				<componente>consultarCreditoDesembolsoSFI01</componente>
+				<backend>00633</backend>
+			</error>
+		</ns2:consultarCreditoDesembolsoSFI01Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+MIGRADO <endeudamientoMicro></endeudamientoMicro>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:Envelope
+	xmlns:ns2="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns3="http://bpichincha.com/servicios">
+	<ns2:Body>
+		<ns3:consultarCreditoDesembolsoSFI01Response>
+			<headerOut>
+				<dispositivo>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>201008702</tipoTransaccion>
+				<geolocalizacion>-2.1440455863586054,-79.87843994778339</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad>96bf3d6246516de36bfa047606ceceb57beec20fb33f72192d84d849e7fda7a1</unicidad>
+				<guid>c575b948dae54be0a00204de8f4613b4</guid>
+				<fechaHora>202606161350120912</fechaHora>
+				<filler>IOS-E9ED621A-27BB-410E-8609-6D9EE062391C|--|02:00:00:00:00:00|iOS|18.7.8|Apple|iPhone</filler>
+				<idioma>es-EC</idioma>
+				<sesion>7946c1ed-e473-41bd-95e0-a426ebb4d119</sesion>
+				<ip>190.63.254.2</ip>
+				<idCliente>1203244080</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>El valor del campo endeudamientoMicro se encuentra vacio</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-wsproductos0143/consultarCreditoDesembolsoSFI01</recurso>
+				<componente>tpr-msa-sp-wsproductos0143</componente>
+				<backend>00633</backend>
+			</error>
+		</ns3:consultarCreditoDesembolsoSFI01Response>
+	</ns2:Body>
+</ns2:Envelope>
