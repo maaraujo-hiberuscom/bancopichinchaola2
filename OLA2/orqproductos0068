@@ -65,7 +65,7 @@ legado
 		</NS2:ConsultaOrdenesDesembolsoSFI01Response>
 	</NS1:Body>
 </NS1:Envelope>
-legado
+migrado
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <soapenv:Envelope
 	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
