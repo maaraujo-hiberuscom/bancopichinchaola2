@@ -1,0 +1,75 @@
+curl --request POST \
+  --url http://10.60.128.58:6981/WSAdministracion0009/soap/WSAdministracion0009Request \
+  --header 'Content-Type: text/xml; charset=utf-8' \
+  --header 'SOAPAction: http://bpichincha.com/servicios/consultarEmpresaServicio01' \
+  --cookie dtCookiewh95kubn=v_4_srv_7_sn_6CC189261A5E8CBB1B25833DE8E1C64B_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_1_rcs-3Acss_0 \
+  --data '<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ser="http://bpichincha.com/servicios">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ser:consultarEmpresaServicio01>
+			<headerIn>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler/>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+				<bancs>
+					<teller>00070560</teller>
+					<terminal>1</terminal>
+					<institucion>0010</institucion>
+					<agencia>1</agencia>
+					<estacion>1</estacion>
+					<aplicacion/>
+					<canal/>
+				</bancs>
+			</headerIn>
+			<bodyIn>
+				<codigoObjetoHtml></codigoObjetoHtml>
+				<codigoServicio></codigoServicio>
+				<codigoBloque></codigoBloque>
+				<codigoConfiguracionPago></codigoConfiguracionPago>
+				<codigoEmpresa></codigoEmpresa>
+				<codigoOperacion></codigoOperacion>
+				<descripcionServicio></descripcionServicio>
+				<aliasServicio></aliasServicio>
+				<fechaInscripcionServicio></fechaInscripcionServicio>
+				<fechaIngresoServicio></fechaIngresoServicio>
+				<flagConConsultaPreviaServicio></flagConConsultaPreviaServicio>
+				<flagConConsultaServicio></flagConConsultaServicio>
+				<nombreServicio></nombreServicio>
+				<flagFechaCaducidadServicio></flagFechaCaducidadServicio>
+				<ordenPresentacionServicio></ordenPresentacionServicio>
+				<nombreLogotipoServicio></nombreLogotipoServicio>
+				<tiempoProximaConsultaServicio></tiempoProximaConsultaServicio>
+				<rutaLogotipoServicio></rutaLogotipoServicio>
+				<usarProgramarServicio></usarProgramarServicio>
+				<usarFavoritoServicio></usarFavoritoServicio>
+				<valorMaximoPagoServicio></valorMaximoPagoServicio>
+				<usuarioIngresoServicio></usuarioIngresoServicio>
+				<valorPorcentajePagoServicio></valorPorcentajePagoServicio>
+				<valorMinimoPagoServicio></valorMinimoPagoServicio>
+				<codigoProgramacionPeriodo></codigoProgramacionPeriodo>
+				<fechaVencimientoServicio></fechaVencimientoServicio>
+				<codigoListarFacturaPago></codigoListarFacturaPago>
+				<flagBatchServicio></flagBatchServicio>
+			</bodyIn>
+		</ser:consultarEmpresaServicio01>
+	</soapenv:Body>
+</soapenv:Envelope>'
+---------------------------------
