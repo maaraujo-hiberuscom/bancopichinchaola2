@@ -1,3 +1,4 @@
+https://tca-msa-sp-wsadministracion0009-enp.apps.ocpdev.uiotest.bpichinchatest.test/WSAdministracion0009/soap/WSAdministracion0009Request
 curl --request POST \
   --url http://10.60.128.58:6981/WSAdministracion0009/soap/WSAdministracion0009Request \
   --header 'Content-Type: text/xml; charset=utf-8' \
