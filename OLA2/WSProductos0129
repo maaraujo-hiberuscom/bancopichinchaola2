@@ -1,6 +1,86 @@
-Hola buenos días, el WSProductos0129 ya está en dev listo para pruebas 
-proyecto-bp/proyectos/Ola2/WSProductos0129-was at main · lealomoto-hiberuscom/proyecto-bp
-https://pichincha.atlassian.net/browse/BTHCCC-14934
-Legado: http://10.60.128.57:6921/WSProductos0129/soap/WSProductos0129Request 
-migrado dev
-https://tpr-msa-sp-wsproductos0129-enp.apps.ocpdev.uiotest.bpichinchatest.test/WSProductos0129/soap/WSProductos0129Request
+legado
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:actualizarOfertaCliente32Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>?</dispositivo>
+				<empresa>?</empresa>
+				<canal>?</canal>
+				<medio>?</medio>
+				<aplicacion>?</aplicacion>
+				<agencia>?</agencia>
+				<tipoTransaccion>?</tipoTransaccion>
+				<geolocalizacion>?</geolocalizacion>
+				<usuario>?</usuario>
+				<unicidad>?</unicidad>
+				<guid>?</guid>
+				<fechaHora>?</fechaHora>
+				<filler>?</filler>
+				<idioma>?</idioma>
+				<sesion>?</sesion>
+				<ip>?</ip>
+				<idCliente>?</idCliente>
+				<tipoIdCliente>?</tipoIdCliente>
+				<documento>
+					<fechaContable>?</fechaContable>
+					<numeroDocumento>?</numeroDocumento>
+					<journals>
+						<journal>
+							<valor>?</valor>
+						</journal>
+					</journals>
+				</documento>
+			</headerOut>
+			<bodyOut/>
+			<error>
+				<codigo>9999</codigo>
+				<mensaje>TSECBPOC13-0 fila(s) afectadas</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0184/ActualizarOfertaCliente32</recurso>
+				<componente>actualizarOfertaCliente32</componente>
+			</error>
+		</ns2:actualizarOfertaCliente32Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+migrado
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:actualizarOfertaCliente32Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>?</dispositivo>
+				<empresa>?</empresa>
+				<canal>?</canal>
+				<medio>?</medio>
+				<aplicacion>?</aplicacion>
+				<agencia>?</agencia>
+				<tipoTransaccion>?</tipoTransaccion>
+				<geolocalizacion>?</geolocalizacion>
+				<usuario>?</usuario>
+				<unicidad>?</unicidad>
+				<guid>?</guid>
+				<fechaHora>?</fechaHora>
+				<filler>?</filler>
+				<idioma>?</idioma>
+				<sesion>?</sesion>
+				<ip>?</ip>
+				<idCliente>?</idCliente>
+				<tipoIdCliente>?</tipoIdCliente>
+			</headerOut>
+			<bodyOut/>
+			<error>
+				<codigo>9999</codigo>
+				<mensaje>0 fila(s) afectadas</mensaje>
+				<mensajeNegocio/>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-wsproductos0129/ActualizarOfertaCliente01</recurso>
+				<componente>tpr-msa-sp-wsproductos0129</componente>
+			</error>
+		</ns2:actualizarOfertaCliente32Response>
+	</soapenv:Body>
+</soapenv:Envelope>
