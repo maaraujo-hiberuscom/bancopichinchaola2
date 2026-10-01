@@ -1,0 +1,78 @@
+migrado
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response>
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>Solicitud ya fue Gestionada, Imposible Continuar</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-wsproductos0147/crearInstrumentacionDesembolsoSFI21</recurso>
+				<componente>tpr-msa-sp-wsproductos0147</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+LEGADO
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>VHReglas-Solicitud ya fue Gestionada, Imposible Continuar</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0197/InstrumentacionDesembolsoMVL</recurso>
+				<componente>InstrumentacionDesembolsoMVL</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
