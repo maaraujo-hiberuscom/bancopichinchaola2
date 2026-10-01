@@ -1,10 +1,11 @@
+ep-002 LEGADO
+<?xml version="1.0" encoding="utf-8"?>
 <soapenv:Envelope
-	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ser="http://bpichincha.com/servicios">
-	<soapenv:Header/>
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
 	<soapenv:Body>
-		<ser:crearInstrumentacionDesembolsoSFI21>
-			<headerIn>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
 				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
 				<empresa>0010</empresa>
 				<canal>02</canal>
@@ -17,48 +18,295 @@
 				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
 				<guid>59cae047abad47d5b683388a132fbddf</guid>
 				<fechaHora>202506251508450015</fechaHora>
-				<filler/>
+				<filler></filler>
 				<idioma>es-EC</idioma>
 				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
 				<ip>0.0.0.0</ip>
 				<idCliente>0801545674</idCliente>
 				<tipoIdCliente>0001</tipoIdCliente>
-				<!--Optional:-->
-				<bancs>
-					<teller>00070560</teller>
-					<terminal>1</terminal>
-					<institucion>0010</institucion>
-					<agencia>1</agencia>
-					<estacion>1</estacion>
-					<aplicacion/>
-					<canal/>
-				</bancs>
-			</headerIn>
-			<!--Optional:-->
-			<bodyIn>
-				<externalId>DSMBL_0104423603_010140_54018_3</externalId>
-				<externalType>DESEMBOLSO</externalType>
-				<tipoIdentificacion>0001</tipoIdentificacion>
-				<identificacion>0104423603</identificacion>
-				<accion>1</accion>
-				<numeroOperacion>8003288865</numeroOperacion>
-				<montoOperacion>5000.00</montoOperacion>
-				<plazo>1440</plazo>
-				<frecuencia>30</frecuencia>
-				<tasa>22.43</tasa>
-				<codigoTipoGarantia>NOG</codigoTipoGarantia>
-				<codigoOferta>CPP</codigoOferta>
-				<fechaVencimientoCred>01/09/2030</fechaVencimientoCred>
-				<solca>25.00</solca>
-				<desgravamen>205.05</desgravamen>
-				<diaPago>1</diaPago>
-				<incendio>0.00</incendio>
-				<canalDsmbl>SIMA</canalDsmbl>
-				<interesMontoOpera>2720.86</interesMontoOpera>
-				<xmlAmortizacion>
-					<![CDATA[ <tablaAmortizacion><cuota><numeroCuota>1</numeroCuota><fechaPago>01/10/2026</fechaPago><capital>63.77</capital><interes>130.84</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>9.86</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>204.47</cuotaTotal><saldo>4936.23</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>2</numeroCuota><fechaPago>01/11/2026</fechaPago><capital>61.74</capital><interes>95.34</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>7.19</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4874.49</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>3</numeroCuota><fechaPago>01/12/2026</fechaPago><capital>66.29</capital><interes>91.11</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.87</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4808.20</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>4</numeroCuota><fechaPago>01/01/2027</fechaPago><capital>64.40</capital><interes>92.87</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>7.00</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4743.80</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>5</numeroCuota><fechaPago>01/02/2027</fechaPago><capital>65.74</capital><interes>91.63</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.90</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4678.06</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>6</numeroCuota><fechaPago>01/03/2027</fechaPago><capital>76.51</capital><interes>81.61</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.15</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4601.55</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>7</numeroCuota><fechaPago>01/04/2027</fechaPago><capital>68.70</capital><interes>88.88</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.69</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4532.85</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>8</numeroCuota><fechaPago>01/05/2027</fechaPago><capital>73.16</capital><interes>84.73</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.38</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4459.69</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>9</numeroCuota><fechaPago>01/06/2027</fechaPago><capital>71.64</capital><interes>86.14</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.49</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4388.05</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>10</numeroCuota><fechaPago>01/07/2027</fechaPago><capital>76.07</capital><interes>82.02</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.18</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4311.98</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>11</numeroCuota><fechaPago>01/08/2027</fechaPago><capital>74.71</capital><interes>83.28</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.28</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4237.27</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>12</numeroCuota><fechaPago>01/09/2027</fechaPago><capital>76.26</capital><interes>81.84</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>6.17</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4161.01</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>13</numeroCuota><fechaPago>01/10/2027</fechaPago><capital>80.63</capital><interes>77.78</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.86</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4080.38</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>14</numeroCuota><fechaPago>01/11/2027</fechaPago><capital>79.52</capital><interes>78.81</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.94</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>4000.86</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>15</numeroCuota><fechaPago>01/12/2027</fechaPago><capital>83.85</capital><interes>74.78</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.64</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3917.01</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>16</numeroCuota><fechaPago>01/01/2028</fechaPago><capital>82.91</capital><interes>75.66</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.70</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3834.10</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>17</numeroCuota><fechaPago>01/02/2028</fechaPago><capital>84.64</capital><interes>74.05</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.58</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3749.46</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>18</numeroCuota><fechaPago>01/03/2028</fechaPago><capital>91.42</capital><interes>67.75</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.10</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3658.04</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>19</numeroCuota><fechaPago>01/04/2028</fechaPago><capital>88.29</capital><interes>70.65</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.33</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3569.75</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>20</numeroCuota><fechaPago>01/05/2028</fechaPago><capital>92.52</capital><interes>66.72</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.03</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3477.23</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>21</numeroCuota><fechaPago>01/06/2028</fechaPago><capital>92.05</capital><interes>67.16</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>5.06</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3385.18</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>22</numeroCuota><fechaPago>01/07/2028</fechaPago><capital>96.23</capital><interes>63.27</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>4.77</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3288.95</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>23</numeroCuota><fechaPago>01/08/2028</fechaPago><capital>95.96</capital><interes>63.52</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>4.79</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3192.99</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>24</numeroCuota><fechaPago>01/09/2028</fechaPago><capital>97.95</capital><interes>61.67</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>4.65</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>3095.04</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>25</numeroCuota><fechaPago>01/10/2028</fechaPago><capital>102.06</capital><interes>57.85</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>4.36</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2992.98</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>26</numeroCuota><fechaPago>01/11/2028</fechaPago><capital>102.11</capital><interes>57.81</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>4.35</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2890.87</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>27</numeroCuota><fechaPago>01/12/2028</fechaPago><capital>106.16</capital><interes>54.04</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>4.07</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2784.71</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>28</numeroCuota><fechaPago>01/01/2029</fechaPago><capital>106.43</capital><interes>53.79</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>4.05</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2678.28</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>29</numeroCuota><fechaPago>01/02/2029</fechaPago><capital>108.64</capital><interes>51.73</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>3.90</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2569.64</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>30</numeroCuota><fechaPago>01/03/2029</fechaPago><capital>116.06</capital><interes>44.83</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>3.38</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2453.58</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>31</numeroCuota><fechaPago>01/04/2029</fechaPago><capital>113.31</capital><interes>47.39</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>3.57</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2340.27</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>32</numeroCuota><fechaPago>01/05/2029</fechaPago><capital>117.23</capital><interes>43.74</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>3.30</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2223.04</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>33</numeroCuota><fechaPago>01/06/2029</fechaPago><capital>118.10</capital><interes>42.94</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>3.23</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>2104.94</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>34</numeroCuota><fechaPago>01/07/2029</fechaPago><capital>121.96</capital><interes>39.34</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>2.97</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>1982.98</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>35</numeroCuota><fechaPago>01/08/2029</fechaPago><capital>123.08</capital><interes>38.30</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>2.89</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>1859.90</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>36</numeroCuota><fechaPago>01/09/2029</fechaPago><capital>125.64</capital><interes>35.92</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>2.71</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>1734.26</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>37</numeroCuota><fechaPago>01/10/2029</fechaPago><capital>129.41</capital><interes>32.42</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>2.44</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>1604.85</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>38</numeroCuota><fechaPago>01/11/2029</fechaPago><capital>130.94</capital><interes>31.00</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>2.33</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>1473.91</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>39</numeroCuota><fechaPago>01/12/2029</fechaPago><capital>134.64</capital><interes>27.55</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>2.08</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>1339.27</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>40</numeroCuota><fechaPago>01/01/2030</fechaPago><capital>136.45</capital><interes>25.87</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>1.95</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>1202.82</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>41</numeroCuota><fechaPago>01/02/2030</fechaPago><capital>139.29</capital><interes>23.23</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>1.75</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>1063.53</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>42</numeroCuota><fechaPago>01/03/2030</fechaPago><capital>144.32</capital><interes>18.55</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>1.40</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>919.21</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>43</numeroCuota><fechaPago>01/04/2030</fechaPago><capital>145.18</capital><interes>17.75</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>1.34</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>774.03</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>44</numeroCuota><fechaPago>01/05/2030</fechaPago><capital>148.71</capital><interes>14.47</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>1.09</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>625.32</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>45</numeroCuota><fechaPago>01/06/2030</fechaPago><capital>151.28</capital><interes>12.08</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>0.91</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>474.04</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>46</numeroCuota><fechaPago>01/07/2030</fechaPago><capital>154.74</capital><interes>8.86</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>0.67</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>319.30</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>47</numeroCuota><fechaPago>01/08/2030</fechaPago><capital>157.64</capital><interes>6.17</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>0.46</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>164.27</cuotaTotal><saldo>161.66</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota><cuota><numeroCuota>48</numeroCuota><fechaPago>01/09/2030</fechaPago><capital>161.66</capital><interes>3.12</interes><impuestoMasRecargo>0.00</impuestoMasRecargo><seguro>0.24</seguro><iva>0.00</iva><retencionFuente>0.00</retencionFuente><periodoGracia>0.00</periodoGracia><interesReestructurado>0.00</interesReestructurado><cuotaTotal>165.02</cuotaTotal><saldo>0.00</saldo><tasaInteresNegociado>22.43</tasaInteresNegociado><descuentoPrima>0.00</descuentoPrima><interesNoDevengado>0.00</interesNoDevengado><interesMora>0.00</interesMora></cuota></tablaAmortizacion>     ]]>
-				</xmlAmortizacion>
-			</bodyIn>
-		</ser:crearInstrumentacionDesembolsoSFI21>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>VHReglas-Campos Obligatorios, External ID Solicitud</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0197/InstrumentacionDesembolsoMVL</recurso>
+				<componente>InstrumentacionDesembolsoMVL</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+EP-002 MIGRADO
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response>
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>Campos Obligatorios, External ID Solicitud</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-wsproductos0147/crearInstrumentacionDesembolsoSFI21</recurso>
+				<componente>tpr-msa-sp-wsproductos0147</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+EP-004 MIGRADO
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response>
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>Campos Obligatorios, External Type Solicitud</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-wsproductos0147/crearInstrumentacionDesembolsoSFI21</recurso>
+				<componente>tpr-msa-sp-wsproductos0147</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+EP-004 LEGADO
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>VHReglas-Campos Obligatorios, External Type Solicitud</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0197/InstrumentacionDesembolsoMVL</recurso>
+				<componente>InstrumentacionDesembolsoMVL</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+ep-005 migrado
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response>
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>Solicitud ya fue Gestionada, Imposible Continuar</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-wsproductos0147/crearInstrumentacionDesembolsoSFI21</recurso>
+				<componente>tpr-msa-sp-wsproductos0147</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+EP-005 LEGADO
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>VHReglas-Solicitud ya fue Gestionada, Imposible Continuar</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0197/InstrumentacionDesembolsoMVL</recurso>
+				<componente>InstrumentacionDesembolsoMVL</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+ EP-007 LEGADO
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>VHReglas-Campos Obligatorios, Identificacion Deudor</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>UMPProductos0197/InstrumentacionDesembolsoMVL</recurso>
+				<componente>InstrumentacionDesembolsoMVL</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+EP-007 MIGRADO
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:crearInstrumentacionDesembolsoSFI21Response>
+			<headerOut>
+				<dispositivo>9bQuTMzGBTM7/sxxVRY+E5whYnM3xQz3ZMSjDiYTlt8</dispositivo>
+				<empresa>0010</empresa>
+				<canal>02</canal>
+				<medio>020002</medio>
+				<aplicacion>00647</aplicacion>
+				<agencia>197</agencia>
+				<tipoTransaccion>302000201</tipoTransaccion>
+				<geolocalizacion>1234</geolocalizacion>
+				<usuario>ISMAVEGA</usuario>
+				<unicidad>6ef49129ccd84529bda5317d260dee6c</unicidad>
+				<guid>59cae047abad47d5b683388a132fbddf</guid>
+				<fechaHora>202506251508450015</fechaHora>
+				<filler></filler>
+				<idioma>es-EC</idioma>
+				<sesion>f65194bc-153a-497a-9b66-d80e6f8e51ff</sesion>
+				<ip>0.0.0.0</ip>
+				<idCliente>0801545674</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<error>
+				<codigo>1</codigo>
+				<mensaje>Campos Obligatorios, Identificacion Deudor</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>ERROR</tipo>
+				<recurso>tpr-msa-sp-wsproductos0147/crearInstrumentacionDesembolsoSFI21</recurso>
+				<componente>tpr-msa-sp-wsproductos0147</componente>
+				<backend>00650</backend>
+			</error>
+		</ns2:crearInstrumentacionDesembolsoSFI21Response>
 	</soapenv:Body>
 </soapenv:Envelope>
