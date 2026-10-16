@@ -1,0 +1,88 @@
+legado
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarGrupoEconomicoResponse
+			xmlns:ns2="http://service.grupoeconomico.pichincha.com.ec/">
+			<return>
+				<codigoRespuesta>0</codigoRespuesta>
+				<grupoEconomico>
+					<codigoGrupoEconomico>000031</codigoGrupoEconomico>
+					<codigoSIB>100133</codigoSIB>
+					<estado>A</estado>
+					<nombreGrupoEconomico>HIXXXXIL</nombreGrupoEconomico>
+					<observaciones></observaciones>
+				</grupoEconomico>
+				<mensajeRespuesta>OK</mensajeRespuesta>
+			</return>
+		</ns2:consultarGrupoEconomicoResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+migrado
+<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarGrupoEconomicoResponse
+			xmlns:ns2="http://service.grupoeconomico.pichincha.com.ec/"
+			xmlns:ns3="http://service.grupoeconomico.pichincha.com.ec/">
+			<return>
+				<codigoRespuesta>0</codigoRespuesta>
+				<grupoEconomico>
+					<codigoGrupoEconomico>000031</codigoGrupoEconomico>
+					<codigoSIB>100133</codigoSIB>
+					<estado>A</estado>
+					<nombreGrupoEconomico>HIXXXXIL</nombreGrupoEconomico>
+					<observaciones/>
+				</grupoEconomico>
+				<mensajeRespuesta>OK</mensajeRespuesta>
+			</return>
+		</ns2:consultarGrupoEconomicoResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+migrado sin identificacion
+<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarGrupoEconomicoResponse
+			xmlns:ns2="http://service.grupoeconomico.pichincha.com.ec/"
+			xmlns:ns3="http://service.grupoeconomico.pichincha.com.ec/">
+			<return>
+				<codigoRespuesta>0</codigoRespuesta>
+				<grupoEconomico>
+					<codigoGrupoEconomico>000031</codigoGrupoEconomico>
+					<codigoSIB>100133</codigoSIB>
+					<estado>A</estado>
+					<nombreGrupoEconomico>HIXXXXIL</nombreGrupoEconomico>
+					<observaciones/>
+				</grupoEconomico>
+				<mensajeRespuesta>OK</mensajeRespuesta>
+			</return>
+		</ns2:consultarGrupoEconomicoResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
+legado sin idetificacion
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarGrupoEconomicoResponse
+			xmlns:ns2="http://service.grupoeconomico.pichincha.com.ec/">
+			<return>
+				<codigoRespuesta>0</codigoRespuesta>
+				<grupoEconomico>
+					<codigoGrupoEconomico>000031</codigoGrupoEconomico>
+					<codigoSIB>100133</codigoSIB>
+					<estado>A</estado>
+					<nombreGrupoEconomico>HIXXXXIL</nombreGrupoEconomico>
+					<observaciones></observaciones>
+				</grupoEconomico>
+				<mensajeRespuesta>OK</mensajeRespuesta>
+			</return>
+		</ns2:consultarGrupoEconomicoResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
