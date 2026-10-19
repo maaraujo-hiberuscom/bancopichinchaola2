@@ -1,0 +1,43 @@
+curl --location 'http://tac-msa-sp-wsriesgoconsolidadowasservice.apps.ocpdev.uiotest.bpichinchatest.test/RiesgoConsolidadoWS/WSRiesgoConsolidadoWASService' \
+--header 'Content-Type: text/xml; charset=utf-8' \
+--header 'SOAPAction: "ActualizarOficialCliente31"' \
+--header 'Cookie: 1515f42c7bca55f64cb6d1ee59ee904c=87f9456c9102bcd3c5c6000d1ed85686' \
+--data '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.riesgoconsolidado.pichincha.com.ec/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:consultarRiesgoConsolidado>
+         <bodyIn>
+            <empresa>0010</empresa>
+            <intervinientes>
+               <!--Zero or more repetitions:-->
+               <interviniente>
+                  <tipoIdentificacion>C</tipoIdentificacion>
+                  <identificacion>0100013911</identificacion>
+               </interviniente>
+            </intervinientes>
+         </bodyIn>
+      </ser:consultarRiesgoConsolidado>
+   </soapenv:Body>
+</soapenv:Envelope>'
+ ----------------
+curl --location http://10.60.128.89:9081/RiesgoConsolidadoWS/WSRiesgoConsolidadoWASService ' \
+--header 'Content-Type: text/xml; charset=utf-8' \
+--header 'SOAPAction: "ActualizarOficialCliente31"' \
+--header 'Cookie: 1515f42c7bca55f64cb6d1ee59ee904c=87f9456c9102bcd3c5c6000d1ed85686' \
+--data '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service.riesgoconsolidado.pichincha.com.ec/">
+  <soapenv:Header/>
+  <soapenv:Body>
+     <ser:consultarRiesgoConsolidado>
+        <bodyIn>
+           <empresa>0010</empresa>
+           <intervinientes>
+              <!--Zero or more repetitions:-->
+              <interviniente>
+                 <tipoIdentificacion>C</tipoIdentificacion>
+                 <identificacion>0100013911</identificacion>
+              </interviniente>
+           </intervinientes>
+        </bodyIn>
+     </ser:consultarRiesgoConsolidado>
+  </soapenv:Body>
+</soapenv:Envelope>'
