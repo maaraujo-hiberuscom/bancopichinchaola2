@@ -1,1 +1,77 @@
-https://pichincha.atlassian.net/wiki/spaces/BPTPSRE/pages/6531154473/RiesgoClienteSARwsService-+Documentaci+n+del+servicio
+MIGRADOS
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<rpcOp:consultarRiesgoConsolidadoResponse
+			xmlns:rpcOp="http://service.riesgoconsolidado.pichincha.com.ec/"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<ns2:consultarRiesgoConsolidadoResponse
+				xmlns:ns2="http://service.riesgoconsolidado.pichincha.com.ec/">
+				<return>
+					<intervinientes>
+						<interviniente>
+							<identificacion>0100013911</identificacion>
+							<riesgoConsolidadoSeguros>241.61</riesgoConsolidadoSeguros>
+							<tipoIdentificacion>C</tipoIdentificacion>
+						</interviniente>
+					</intervinientes>
+					<codigoRespuesta>0</codigoRespuesta>
+					<mensajeRespuesta>OK</mensajeRespuesta>
+				</return>
+			</ns2:consultarRiesgoConsolidadoResponse>
+		</rpcOp:consultarRiesgoConsolidadoResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
+LEGADO
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:consultarRiesgoGlobalClienteResponse
+			xmlns:ns2="http://service.riesgoclientesar.pichincha.com.ec/">
+			<return>
+				<codigoRespuesta>0</codigoRespuesta>
+				<mensajeRespuesta>OK</mensajeRespuesta>
+				<riesgoCliente>
+					<codigoDestinoContable>N</codigoDestinoContable>
+					<codigoDestinoFinanciero>210</codigoDestinoFinanciero>
+					<codigoProductoRiesgo>193</codigoProductoRiesgo>
+					<codigoTipoCartera>INDIRECT</codigoTipoCartera>
+					<descripcionDestinoFinanciero>CAPITAL DE TRABAJO</descripcionDestinoFinanciero>
+					<descripcionProductoRiesgo>CART COMP INST FIN</descripcionProductoRiesgo>
+					<descripcionTipoCartera>CREDITOS INDIRECTOS</descripcionTipoCartera>
+					<destinoContable>CONSUMO</destinoContable>
+					<diasMoraCapital>5849</diasMoraCapital>
+					<estado>NO DEVENGA INTERESES</estado>
+					<fechaConcesion>30/07/2010</fechaConcesion>
+					<fechaVencimiento>30/08/2010</fechaVencimiento>
+					<frecuenciaPago>MENSUAL</frecuenciaPago>
+					<idRelacion>14758161</idRelacion>
+					<identificacion>1001214830</identificacion>
+					<montoCapitalNoDevenga>0</montoCapitalNoDevenga>
+					<montoCapitalPorVencer>1</montoCapitalPorVencer>
+					<montoCapitalVencido>200256.06</montoCapitalVencido>
+					<montoOriginal>178227.89</montoOriginal>
+					<nombreRelacion>PETERSEN WASHIKIAT ROZO COOPERATIVAS</nombreRelacion>
+					<numeroDividendos>1</numeroDividendos>
+					<numeroOperacion>45001585</numeroOperacion>
+					<numeroOperacionSistemaOriginal>210820200</numeroOperacionSistemaOriginal>
+					<plazo>31</plazo>
+					<saldoCXC>0</saldoCXC>
+					<saldoCapitalMora>0</saldoCapitalMora>
+					<saldoInteres>41.27</saldoInteres>
+					<saldoInteresMora>8564.72</saldoInteresMora>
+					<saldoInteresRees>0</saldoInteresRees>
+					<saldoSolcaMora>0</saldoSolcaMora>
+					<sistema>GAF</sistema>
+					<sistemaOrigen>GESTION ACTIVOS FINANCIEROS</sistemaOrigen>
+					<tasaOriginal>.239307</tasaOriginal>
+					<tipoConcesion>ORIGINAL</tipoConcesion>
+					<tipoRelacion>G</tipoRelacion>
+					<totalRiesgo>208863.05</totalRiesgo>
+				</riesgoCliente>
+			</return>
+		</ns2:consultarRiesgoGlobalClienteResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
