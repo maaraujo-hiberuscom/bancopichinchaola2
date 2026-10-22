@@ -1,99 +1,130 @@
-migrado: curl --request POST \
-  --url http://tca-msa-sp-wsseguridad0021.apps.ocpdev.uiotest.bpichinchatest.test/WSSeguridad0021/soap/WSSeguridad0021Request \
-  --header 'Content-Type: application/xml' \
-  --cookie 'dtCookiewh95kubn=v_4_srv_9_sn_F1C355AC0C5F3157C74115A8CE0A20F2_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_0_rcs-3Acss_0; 1c0f37cad7eebb8df623b35fe49052e1=e958aaf0ce40ef2849c26850e29fbddf' \
-  --data '<soapenv:Envelope
+legado 
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:eliminarClienteAfiliadoInternexo41Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>e601249d2524c3bb</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>207000104</tipoTransaccion>
+				<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad></unicidad>
+				<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
+				<fechaHora>202512041200100864</fechaHora>
+				<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
+				<idioma>es-EC</idioma>
+				<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
+				<ip>157.100.141.157</ip>
+				<idCliente>0000000000525</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<identificacion>0000000000525</identificacion>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>VHReglas-OK</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>INFO</tipo>
+				<recurso>UMPSeguridad0035/eliminarClienteInternexo41</recurso>
+				<componente>Base de datos Internexo</componente>
+				<backend>00648</backend>
+			</error>
+		</ns2:eliminarClienteAfiliadoInternexo41Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+migrado
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:eliminarClienteAfiliadoInternexo41Response>
+			<headerOut>
+				<dispositivo>e601249d2524c3bb</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>207000104</tipoTransaccion>
+				<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad></unicidad>
+				<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
+				<fechaHora>202512041200100864</fechaHora>
+				<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
+				<idioma>es-EC</idioma>
+				<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
+				<ip>157.100.141.157</ip>
+				<idCliente>0000000000525</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<identificacion>0000000000525</identificacion>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>OK</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>INFO</tipo>
+				<recurso>UMPSeguridad0035/eliminarClienteInternexo41</recurso>
+				<componente>tca-msa-sp-wsseguridad0021</componente>
+				<backend>00648</backend>
+			</error>
+		</ns2:eliminarClienteAfiliadoInternexo41Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+BODY
+<soapenv:Envelope
 	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 	xmlns:ser="http://bpichincha.com/servicios">
-<soapenv:Header/>
-<soapenv:Body>
-<ser:eliminarClienteAfiliadoInternexo41>
-<!--Optional:-->
-<headerIn>
-<dispositivo>e601249d2524c3bb</dispositivo>
-<empresa>0010</empresa>
-<canal>03</canal>
-<medio>030006</medio>
-<aplicacion>00663</aplicacion>
-<agencia></agencia>
-<tipoTransaccion>207000104</tipoTransaccion>
-<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
-<usuario>USINTERT</usuario>
-<unicidad></unicidad>
-<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
-<fechaHora>202512041200100864</fechaHora>
-<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
-<idioma>es-EC</idioma>
-<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
-<ip>157.100.141.157</ip>
-<idCliente>0202051256</idCliente>
-<tipoIdCliente>0001</tipoIdCliente>
-<bancs>
-<teller>00070560</teller>
-<terminal>1</terminal>
-<institucion>0010</institucion>
-<agencia>1</agencia>
-<estacion>1</estacion>
-<aplicacion></aplicacion>
-<canal></canal>
-</bancs>
-</headerIn>
-<!--Optional:-->
-<bodyIn>
-<!--Optional:-->
-<identificacionCliente>0000000000525</identificacionCliente>
-</bodyIn>
-</ser:eliminarClienteAfiliadoInternexo41>
-</soapenv:Body>
-</soapenv:Envelope>'
- 
-legado: curl --request POST \
-  --url http://10.60.128.58:6951/WSSeguridad0021/soap/WSSeguridad0021Request \
-  --header 'Accept: text/xml' \
-  --header 'Content-Type: text/xml; charset=UTF-8' \
-  --header 'SOAPAction: ""' \
-  --cookie dtCookiewh95kubn=v_4_srv_8_sn_BC51A8150304EC04DCE16B8F7CC22F36_perc_100000_ol_0_mul_1_app-3Aea7c4b59f27d43eb_0_rcs-3Acss_0 \
-  --data '<soapenv:Envelope
-	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ser="http://bpichincha.com/servicios">
-<soapenv:Header/>
-<soapenv:Body>
-<ser:eliminarClienteAfiliadoInternexo41>
-<!--Optional:-->
-<headerIn>
-<dispositivo>e601249d2524c3bb</dispositivo>
-<empresa>0010</empresa>
-<canal>03</canal>
-<medio>030006</medio>
-<aplicacion>00663</aplicacion>
-<agencia></agencia>
-<tipoTransaccion>207000104</tipoTransaccion>
-<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
-<usuario>USINTERT</usuario>
-<unicidad></unicidad>
-<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
-<fechaHora>202512041200100864</fechaHora>
-<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
-<idioma>es-EC</idioma>
-<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
-<ip>157.100.141.157</ip>
-<idCliente>0202051256</idCliente>
-<tipoIdCliente>0001</tipoIdCliente>
-<bancs>
-<teller>00070560</teller>
-<terminal>1</terminal>
-<institucion>0010</institucion>
-<agencia>1</agencia>
-<estacion>1</estacion>
-<aplicacion></aplicacion>
-<canal></canal>
-</bancs>
-</headerIn>
-<!--Optional:-->
-<bodyIn>
-<!--Optional:-->
-<identificacionCliente>0000000000525</identificacionCliente>
-</bodyIn>
-</ser:eliminarClienteAfiliadoInternexo41>
-</soapenv:Body>
-</soapenv:Envelope>'
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ser:eliminarClienteAfiliadoInternexo41>
+			<!--Optional:-->
+			<headerIn>
+				<dispositivo>e601249d2524c3bb</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>207000104</tipoTransaccion>
+				<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad></unicidad>
+				<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
+				<fechaHora>202512041200100864</fechaHora>
+				<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
+				<idioma>es-EC</idioma>
+				<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
+				<ip>157.100.141.157</ip>
+				<idCliente>0202051256</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+				<bancs>
+					<teller>00070560</teller>
+					<terminal>1</terminal>
+					<institucion>0010</institucion>
+					<agencia>1</agencia>
+					<estacion>1</estacion>
+					<aplicacion></aplicacion>
+					<canal></canal>
+				</bancs>
+			</headerIn>
+			<!--Optional:-->
+			<bodyIn>
+				<!--Optional:-->
+				<identificacionCliente>0000000000525</identificacionCliente>
+			</bodyIn>
+		</ser:eliminarClienteAfiliadoInternexo41>
+	</soapenv:Body>
+</soapenv:Envelope>
