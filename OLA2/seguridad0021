@@ -1,4 +1,4 @@
-MIGRADO SIN IDCLIENTE
+MIGRADO ID INEXISTENTE
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <soapenv:Envelope
 	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -40,7 +40,49 @@ MIGRADO SIN IDCLIENTE
 		</ns2:eliminarClienteAfiliadoInternexo41Response>
 	</soapenv:Body>
 </soapenv:Envelope>
-MIGRADO SIN IDCLIENTE
+LEGADO IDINEXISTENTE
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:eliminarClienteAfiliadoInternexo41Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>e601249d2524c3bb</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>207000104</tipoTransaccion>
+				<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad></unicidad>
+				<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
+				<fechaHora>202512041200100864</fechaHora>
+				<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
+				<idioma>es-EC</idioma>
+				<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
+				<ip>157.100.141.157</ip>
+				<idCliente>0000000000525</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<identificacion>0000000000525</identificacion>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>VHReglas-OK</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>INFO</tipo>
+				<recurso>UMPSeguridad0035/eliminarClienteInternexo41</recurso>
+				<componente>Base de datos Internexo</componente>
+				<backend>00648</backend>
+			</error>
+		</ns2:eliminarClienteAfiliadoInternexo41Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+MIGRADO IDNONUMWEICO
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <soapenv:Envelope
 	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -69,6 +111,132 @@ MIGRADO SIN IDCLIENTE
 			</headerOut>
 			<bodyOut>
 				<identificacion>0000000000525</identificacion>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>OK</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>INFO</tipo>
+				<recurso>UMPSeguridad0035/eliminarClienteInternexo41</recurso>
+				<componente>tca-msa-sp-wsseguridad0021</componente>
+				<backend>00648</backend>
+			</error>
+		</ns2:eliminarClienteAfiliadoInternexo41Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+LEEGADO IDNONUMERICO
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:eliminarClienteAfiliadoInternexo41Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>e601249d2524c3bb</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>207000104</tipoTransaccion>
+				<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad></unicidad>
+				<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
+				<fechaHora>202512041200100864</fechaHora>
+				<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
+				<idioma>es-EC</idioma>
+				<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
+				<ip>157.100.141.157</ip>
+				<idCliente>0000000000525</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<identificacion>0000000000525</identificacion>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>VHReglas-OK</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>INFO</tipo>
+				<recurso>UMPSeguridad0035/eliminarClienteInternexo41</recurso>
+				<componente>Base de datos Internexo</componente>
+				<backend>00648</backend>
+			</error>
+		</ns2:eliminarClienteAfiliadoInternexo41Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+LEGADO IDENTIFICACION CLIENTE SIN CEROS 
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<ns2:eliminarClienteAfiliadoInternexo41Response
+			xmlns:ns2="http://bpichincha.com/servicios">
+			<headerOut>
+				<dispositivo>e601249d2524c3bb</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>207000104</tipoTransaccion>
+				<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad></unicidad>
+				<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
+				<fechaHora>202512041200100864</fechaHora>
+				<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
+				<idioma>es-EC</idioma>
+				<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
+				<ip>157.100.141.157</ip>
+				<idCliente>525</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<identificacion>525</identificacion>
+			</bodyOut>
+			<error>
+				<codigo>0</codigo>
+				<mensaje>VHReglas-OK</mensaje>
+				<mensajeNegocio></mensajeNegocio>
+				<tipo>INFO</tipo>
+				<recurso>UMPSeguridad0035/eliminarClienteInternexo41</recurso>
+				<componente>Base de datos Internexo</componente>
+				<backend>00648</backend>
+			</error>
+		</ns2:eliminarClienteAfiliadoInternexo41Response>
+	</soapenv:Body>
+</soapenv:Envelope>
+MIGRADO IDENTIFICACION CLIENTE SIN CEROS
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:eliminarClienteAfiliadoInternexo41Response>
+			<headerOut>
+				<dispositivo>e601249d2524c3bb</dispositivo>
+				<empresa>0010</empresa>
+				<canal>03</canal>
+				<medio>030006</medio>
+				<aplicacion>00663</aplicacion>
+				<agencia></agencia>
+				<tipoTransaccion>207000104</tipoTransaccion>
+				<geolocalizacion>-0.2151063,-78.4013268</geolocalizacion>
+				<usuario>USINTERT</usuario>
+				<unicidad></unicidad>
+				<guid>9f8061cb733a46a6984436b58ff9a53c</guid>
+				<fechaHora>202512041200100864</fechaHora>
+				<filler>e601249d2524c3bb|n/a|n/a|Android|15|samsung|SM-A146U1</filler>
+				<idioma>es-EC</idioma>
+				<sesion>db62257b-d1d6-4feb-a9cf-05b29ee91805</sesion>
+				<ip>157.100.141.157</ip>
+				<idCliente>525</idCliente>
+				<tipoIdCliente>0001</tipoIdCliente>
+			</headerOut>
+			<bodyOut>
+				<identificacion>525</identificacion>
 			</bodyOut>
 			<error>
 				<codigo>0</codigo>
