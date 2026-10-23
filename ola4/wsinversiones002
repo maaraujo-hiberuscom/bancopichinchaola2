@@ -1,40 +1,4 @@
-migrado <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<soapenv:Envelope
-	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ns2="http://bpichincha.com/servicios">
-	<soapenv:Body>
-		<ns2:ConsultarResponse>
-			<header>
-				<usuario>USINTERT</usuario>
-				<aplicacion></aplicacion>
-				<canal>i</canal>
-				<idTransaccion>124559</idTransaccion>
-			</header>
-			<body>
-				<datosConsultas>
-					<datosConsulta>
-						<productos>CA2212758234D000000352715P000000352715P000000000000ACTIVO  20250723                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-					<datosConsulta>
-						<productos>CA2212758595D000000629328P000000629328P000000000000ACTIVO  20250729                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-					<datosConsulta>
-						<productos>CA2212821658D000010050256P000010050256P000000000000ACTIVO  20260701                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-					<datosConsulta>
-						<productos>CA2212822528D000011305866P000010285867P000000000000ACTIVO  20260703                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-					<datosConsulta>
-						<productos>CA2212824747D000004993342P000004992342P000000000000ACTIVO  20260908                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-				</datosConsultas>
-			</body>
-			<codError>0</codError>
-			<descError>OK</descError>
-		</ns2:ConsultarResponse>
-	</soapenv:Body>
-</soapenv:Envelope>
-legado 
+legado CP-002
 <NS1:Envelope
 	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
 	<NS1:Body>
@@ -46,52 +10,96 @@ legado
 				<canal>i</canal>
 				<idTransaccion>124559</idTransaccion>
 			</header>
-			<body>
-				<datosConsultas>
-					<datosConsulta>
-						<productos>CA2212758234D000000352715P000000352715P000000000000ACTIVO  20250723                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-					<datosConsulta>
-						<productos>CA2212758595D000000629328P000000629328P000000000000ACTIVO  20250729                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-					<datosConsulta>
-						<productos>CA2212821658D000010050256P000010050256P000000000000ACTIVO  20260701                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-					<datosConsulta>
-						<productos>CA2212822528D000011305866P000010285867P000000000000ACTIVO  20260703                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-					<datosConsulta>
-						<productos>CA2212824747D000004993342P000004992342P000000000000ACTIVO  20260908                                                  Amazonas 4545, Pereira, Iñaquito  MIGUEL PONTON                                      WIRACOCHACUENCA MC ELHERAN  LACOURT   10PROUSD      0000000000</productos>
-					</datosConsulta>
-				</datosConsultas>
-			</body>
-			<codError>0</codError>
-			<descError>OK</descError>
+			<codError>0009</codError>
+			<descError>CLIENTE NO POSEE REGISTROS o ERROR INESPERADO</descError>
 		</NS2:ConsultarResponse>
 	</NS1:Body>
 </NS1:Envelope>
-body 
+MIGRADO CP002
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <soapenv:Envelope
 	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ser="http://bpichincha.com/servicios">
-	<soapenv:Header/>
+	xmlns:ns2="http://bpichincha.com/servicios">
 	<soapenv:Body>
-		<ser:Consultar>
+		<ns2:ConsultarResponse>
 			<header>
 				<usuario>USINTERT</usuario>
-				<aplicacion/>
+				<aplicacion></aplicacion>
 				<canal>i</canal>
 				<idTransaccion>124559</idTransaccion>
 			</header>
-			<body>
-				<!--Optional:-->
-				<datosConsulta>
-					<!--Optional:-->
-					<cedulaRuc>1715222772</cedulaRuc>
-					<!--Optional:-->
-					<codigoProducto/>
-				</datosConsulta>
-			</body>
-		</ser:Consultar>
+			<codError>9030</codError>
+			<descError>CLIENTE NO TIENE CUENTA ATADA</descError>
+		</ns2:ConsultarResponse>
 	</soapenv:Body>
 </soapenv:Envelope>
+MIGRADO CP003
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:ConsultarResponse>
+			<header>
+				<usuario>USINTERT</usuario>
+				<aplicacion></aplicacion>
+				<canal>i</canal>
+				<idTransaccion>124559</idTransaccion>
+			</header>
+			<codError>1</codError>
+			<descError>Campo identificacion es Obligatorio</descError>
+		</ns2:ConsultarResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
+LEGADO CP003
+<NS1:Envelope
+	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+	<NS1:Body>
+		<NS2:ConsultarResponse
+			xmlns:NS2="http://bpichincha.com/servicios">
+			<header>
+				<usuario>USINTERT</usuario>
+				<aplicacion></aplicacion>
+				<canal>i</canal>
+				<idTransaccion>124559</idTransaccion>
+			</header>
+			<codError>1</codError>
+			<descError>Campo identificacion es Obligatorio</descError>
+		</NS2:ConsultarResponse>
+	</NS1:Body>
+</NS1:Envelope>
+MIGRADO CP004
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:ConsultarResponse>
+			<header>
+				<usuario>USINTERT</usuario>
+				<aplicacion></aplicacion>
+				<canal>i</canal>
+				<idTransaccion>124559</idTransaccion>
+			</header>
+			<codError>9030</codError>
+			<descError>CLIENTE NO TIENE CUENTA ATADA</descError>
+		</ns2:ConsultarResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
+LEGADO CP004
+<NS1:Envelope
+	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+	<NS1:Body>
+		<NS2:ConsultarResponse
+			xmlns:NS2="http://bpichincha.com/servicios">
+			<header>
+				<usuario>USINTERT</usuario>
+				<aplicacion></aplicacion>
+				<canal>i</canal>
+				<idTransaccion>124559</idTransaccion>
+			</header>
+			<codError>0009</codError>
+			<descError>CLIENTE NO POSEE REGISTROS o ERROR INESPERADO</descError>
+		</NS2:ConsultarResponse>
+	</NS1:Body>
+</NS1:Envelope>
