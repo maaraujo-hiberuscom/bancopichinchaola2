@@ -1,105 +1,24 @@
-legado CP-002
-<NS1:Envelope
-	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
-	<NS1:Body>
-		<NS2:ConsultarResponse
-			xmlns:NS2="http://bpichincha.com/servicios">
-			<header>
-				<usuario>USINTERT</usuario>
-				<aplicacion></aplicacion>
-				<canal>i</canal>
-				<idTransaccion>124559</idTransaccion>
-			</header>
-			<codError>0009</codError>
-			<descError>CLIENTE NO POSEE REGISTROS o ERROR INESPERADO</descError>
-		</NS2:ConsultarResponse>
-	</NS1:Body>
-</NS1:Envelope>
-MIGRADO CP002
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <soapenv:Envelope
 	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ns2="http://bpichincha.com/servicios">
+	xmlns:ser="http://bpichincha.com/servicios">
+	<soapenv:Header/>
 	<soapenv:Body>
-		<ns2:ConsultarResponse>
+		<ser:Consultar>
 			<header>
 				<usuario>USINTERT</usuario>
-				<aplicacion></aplicacion>
+				<aplicacion/>
 				<canal>i</canal>
 				<idTransaccion>124559</idTransaccion>
 			</header>
-			<codError>9030</codError>
-			<descError>CLIENTE NO TIENE CUENTA ATADA</descError>
-		</ns2:ConsultarResponse>
+			<body>
+				<!--Optional:-->
+				<datosConsulta>
+					<!--Optional:-->
+					<cedulaRuc>ABC123</cedulaRuc>
+					<!--Optional:-->
+					<codigoProducto/>
+				</datosConsulta>
+			</body>
+		</ser:Consultar>
 	</soapenv:Body>
 </soapenv:Envelope>
-MIGRADO CP003
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<soapenv:Envelope
-	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ns2="http://bpichincha.com/servicios">
-	<soapenv:Body>
-		<ns2:ConsultarResponse>
-			<header>
-				<usuario>USINTERT</usuario>
-				<aplicacion></aplicacion>
-				<canal>i</canal>
-				<idTransaccion>124559</idTransaccion>
-			</header>
-			<codError>1</codError>
-			<descError>Campo identificacion es Obligatorio</descError>
-		</ns2:ConsultarResponse>
-	</soapenv:Body>
-</soapenv:Envelope>
-LEGADO CP003
-<NS1:Envelope
-	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
-	<NS1:Body>
-		<NS2:ConsultarResponse
-			xmlns:NS2="http://bpichincha.com/servicios">
-			<header>
-				<usuario>USINTERT</usuario>
-				<aplicacion></aplicacion>
-				<canal>i</canal>
-				<idTransaccion>124559</idTransaccion>
-			</header>
-			<codError>1</codError>
-			<descError>Campo identificacion es Obligatorio</descError>
-		</NS2:ConsultarResponse>
-	</NS1:Body>
-</NS1:Envelope>
-MIGRADO CP004
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<soapenv:Envelope
-	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ns2="http://bpichincha.com/servicios">
-	<soapenv:Body>
-		<ns2:ConsultarResponse>
-			<header>
-				<usuario>USINTERT</usuario>
-				<aplicacion></aplicacion>
-				<canal>i</canal>
-				<idTransaccion>124559</idTransaccion>
-			</header>
-			<codError>9030</codError>
-			<descError>CLIENTE NO TIENE CUENTA ATADA</descError>
-		</ns2:ConsultarResponse>
-	</soapenv:Body>
-</soapenv:Envelope>
-LEGADO CP004
-<NS1:Envelope
-	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
-	<NS1:Body>
-		<NS2:ConsultarResponse
-			xmlns:NS2="http://bpichincha.com/servicios">
-			<header>
-				<usuario>USINTERT</usuario>
-				<aplicacion></aplicacion>
-				<canal>i</canal>
-				<idTransaccion>124559</idTransaccion>
-			</header>
-			<codError>0009</codError>
-			<descError>CLIENTE NO POSEE REGISTROS o ERROR INESPERADO</descError>
-		</NS2:ConsultarResponse>
-	</NS1:Body>
-</NS1:Envelope>
