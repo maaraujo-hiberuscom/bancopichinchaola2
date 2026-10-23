@@ -1,24 +1,70 @@
+MIGRADO CP-005
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <soapenv:Envelope
 	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
-	xmlns:ser="http://bpichincha.com/servicios">
-	<soapenv:Header/>
+	xmlns:ns2="http://bpichincha.com/servicios">
 	<soapenv:Body>
-		<ser:Consultar>
+		<ns2:ConsultarResponse>
 			<header>
 				<usuario>USINTERT</usuario>
-				<aplicacion/>
+				<aplicacion></aplicacion>
 				<canal>i</canal>
 				<idTransaccion>124559</idTransaccion>
 			</header>
-			<body>
-				<!--Optional:-->
-				<datosConsulta>
-					<!--Optional:-->
-					<cedulaRuc>ABC123</cedulaRuc>
-					<!--Optional:-->
-					<codigoProducto/>
-				</datosConsulta>
-			</body>
-		</ser:Consultar>
+			<codError>0009</codError>
+			<descError>CLIENTE NO POSEE REGISTROS o ERROR INESPERADO</descError>
+		</ns2:ConsultarResponse>
 	</soapenv:Body>
 </soapenv:Envelope>
+LEGADO CP 005
+<NS1:Envelope
+	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+	<NS1:Body>
+		<NS2:ConsultarResponse
+			xmlns:NS2="http://bpichincha.com/servicios">
+			<header>
+				<usuario>USINTERT</usuario>
+				<aplicacion></aplicacion>
+				<canal>i</canal>
+				<idTransaccion>124559</idTransaccion>
+			</header>
+			<codError>0009</codError>
+			<descError>CLIENTE NO POSEE REGISTROS o ERROR INESPERADO</descError>
+		</NS2:ConsultarResponse>
+	</NS1:Body>
+</NS1:Envelope>
+MIGRADO CP006
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:ns2="http://bpichincha.com/servicios">
+	<soapenv:Body>
+		<ns2:ConsultarResponse>
+			<header>
+				<usuario>USINTERT</usuario>
+				<aplicacion></aplicacion>
+				<canal>i</canal>
+				<idTransaccion>124559</idTransaccion>
+			</header>
+			<codError>0009</codError>
+			<descError>CLIENTE NO POSEE REGISTROS o ERROR INESPERADO</descError>
+		</ns2:ConsultarResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
+LEGADO CP -006
+<NS1:Envelope
+	xmlns:NS1="http://schemas.xmlsoap.org/soap/envelope/">
+	<NS1:Body>
+		<NS2:ConsultarResponse
+			xmlns:NS2="http://bpichincha.com/servicios">
+			<header>
+				<usuario>USINTERT</usuario>
+				<aplicacion></aplicacion>
+				<canal>i</canal>
+				<idTransaccion>124559</idTransaccion>
+			</header>
+			<codError>0009</codError>
+			<descError>CLIENTE NO POSEE REGISTROS o ERROR INESPERADO</descError>
+		</NS2:ConsultarResponse>
+	</NS1:Body>
+</NS1:Envelope>
